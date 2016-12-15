@@ -21,6 +21,8 @@
   </head>
 
   <body class="analysis-5">
+    
+
 
       <nav class="navbar navbar-primary bg-faded mb0">
           <a href="./" class="navbar-brand text-uppercase">Pixseb</a>
@@ -31,6 +33,7 @@
             <li class="nav-item">
               <a class="nav-link p text-medium" href="#"><i class="ionicons ion-chatbox-working color-grey-light mr- pull-left" style="font-size: 24px;"></i>Help</a>
             </li>
+
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle p text-medium" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">EN <i class="ionicons ion-chevron-down color-grey-light ml-"></i></a>
               <div class="dropdown-menu p">
@@ -49,17 +52,33 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link clearfix pt0 pb0" href="#">
+
+              <a class="nav-link clearfix p0 jc-sb at-c dropdown-toggle " data-toggle="dropdown" style="display: flex;" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                   
-                <img src="http://placehold.it/62x62" class="pull-left mr-" alt="62x62" />
+                <img src="images/face-1.jpg" class="pull-left mr-" width="60" alt="Face 1" />
               
-                <div class="pull-left"><p class="small color-grey-light mt-">INSA Strasbourg</p> <p class="text-medium">Denis C.</p></div>
+                <div class="pull-left ml df flex-column">
+                  <p class="small color-grey-light">INSA Strasbourg</p> <p class="text-medium">Denis C.</p>
+                </div>
+
+                <i class="ionicons ion-chevron-down pull-right ml mr"></i>
+
               </a>
+              <div class="dropdown-menu p">
+                <ul class="list-unstyled">
+                  <li><a href="" class="dropdown-item">Profile</a></li>
+                  <li><a href="" class="dropdown-item">Password</a></li>
+                  <li><a href="" class="dropdown-item">Notifications</a></li>
+                  <li><a href="" class="dropdown-item">Team</a></li>
+                  <li><a href="" class="dropdown-item">Data settings</a></li>
+                  <hr>
+                  <li><a href="" class="dropdown-item color-pink mb0">Disconect</a></li>
+                </ul>
+              </div>
             </li>
           </ul>
           
       </nav>
-
     <nav class="navbar navbar-secondary bg-faded pt-- pb--">
   <div class="container">
     <ul class="nav navbar-nav">
@@ -352,7 +371,7 @@
       $("#patents-meter").myfunc({
         divFact:10,
         eventListenerType:'keyup',
-        initDeg : -90
+        initDeg : 25
       });
 
 
