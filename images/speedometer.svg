@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="235px" height="120px" viewBox="0 0 235 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>speedometer</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <ellipse id="path-1" cx="136" cy="136" rx="96" ry="96"></ellipse>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="192" height="192" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <path d="M136,232 C189.019336,232 232,189.019336 232,136 C232,82.980664 189.019336,40 136,40 C82.980664,40 40,82.980664 40,136 C40,189.019336 82.980664,232 136,232 Z" id="path-3"></path>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="192" height="192" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <path d="M136,232 C189.019336,232 232,189.019336 232,136 C232,82.980664 189.019336,40 136,40 C82.980664,40 40,82.980664 40,136 C40,189.019336 82.980664,232 136,232 Z" id="path-5"></path>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="192" height="192" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="speedometer" transform="translate(-18.000000, -40.000000)">
+            <text id="NOT-ENOUGH" font-family="Roboto-Medium, Roboto" font-size="12" font-weight="400" fill="#EB2B5E">
+                <tspan x="18" y="159">NOT ENOUGH</tspan>
+            </text>
+            <text id="TOO-MANY" font-family="Roboto-Medium, Roboto" font-size="12" font-weight="400" fill="#FF9D3C">
+                <tspan x="192" y="159">TOO MANY</tspan>
+            </text>
+            <use id="Rouge" stroke="" mask="url(#mask-2)" stroke-width="8" transform="translate(136.000000, 136.000000) rotate(-545.000000) translate(-136.000000, -136.000000) " xlink:href="#path-1"></use>
+            <use id="Orange" stroke="" mask="url(#mask-4)" stroke-width="8" transform="translate(136.000000, 136.000000) rotate(-52.000000) translate(-136.000000, -136.000000) " xlink:href="#path-3"></use>
+            <use id="Vert" stroke="" mask="url(#mask-6)" stroke-width="8" transform="translate(136.000000, 136.000000) rotate(-129.000000) translate(-136.000000, -136.000000) " xlink:href="#path-5"></use>
+        </g>
+    </g>
+</svg>

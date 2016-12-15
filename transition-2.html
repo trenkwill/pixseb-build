@@ -1,0 +1,465 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Pixseb</title>
+
+    <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker3.standalone.min.css">
+    
+    <link href="stylesheets/site.css" rel="stylesheet" />
+    <script src="javascripts/all.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.5.3/css/bootstrap-slider.min.css">
+  </head>
+
+  <body class="transition-2">
+
+      <nav class="navbar navbar-primary bg-faded mb0">
+          <a href="./" class="navbar-brand text-uppercase">Pixseb</a>
+          <a class="navbar-brand pl0" href="#">
+          
+          </a>
+          <ul class="nav navbar-nav pull-right">
+            <li class="nav-item">
+              <a class="nav-link p text-medium" href="#"><i class="ionicons ion-chatbox-working color-grey-light mr- pull-left" style="font-size: 24px;"></i>Help</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle p text-medium" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">EN <i class="ionicons ion-chevron-down color-grey-light ml-"></i></a>
+              <div class="dropdown-menu p">
+                <ul class="list-unstyled">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p" href="#">
+                <div class="badge-container">
+                  <i class="fa fa-bell"></i>
+                  <span class="badge">3</span>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link clearfix pt0 pb0" href="#">
+                  
+                <img src="http://placehold.it/62x62" class="pull-left mr-" alt="62x62" />
+              
+                <div class="pull-left"><p class="small color-grey-light mt-">INSA Strasbourg</p> <p class="text-medium">Denis C.</p></div>
+              </a>
+            </li>
+          </ul>
+          
+      </nav>
+
+      <div class="container mt">
+    <div class="row">
+      <div class="col-sm-9">
+        <ul class="breadcrumbs">
+          <li>Sélection</li>
+          <li>Categorizarion</li>
+          <li>Extraction</li>
+          <li>Contradictions</li>
+          <li class="active">Business Drivers</li>
+          <li class="next">Evaluation criteria</li>
+          <li class="next">Evaluation</li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+          <div class="card">
+	<p class="text-bold color-grey pl pt pr">Progress</p>
+	<p class="pl pb pr"><span class="text-bold color-blue">20%  :</span> <span class="color-grey">Patent analysis</span></p>
+	<div class="progress">
+	  <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
+	  </div>
+	</div>
+</div>
+      </div>
+  </div>
+  </div>
+
+<div class="text-center padded"><img src="images/transition.png" width="230" alt="Transition" /></div>
+
+
+<nav class="navbar navbar-action navbar-fixed-bottom p-">
+	
+	<a href="transition-1.html" class="btn btn-outline color-white pull-left">Back</a>
+
+	<div class="pull-right">
+	  	<div class="clearfix">
+	  		<p class="color-white pull-left mr">Saving... <br>Par Denis C. - INSA</p>
+	  		<a href="analysis-2.html" class="btn btn-default color-blue-2 pull-right">Continue</a>
+	  	</div>
+	</div>
+
+</nav>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.5.3/bootstrap-slider.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
+
+    <script src="javascripts/jquery.FloatLabel.js"></script>
+
+    <script src="javascripts/speedometer.js"></script>
+
+    <script src="javascripts/jsPlumb-2.2.6-min.js"></script>
+
+    <script src="javascripts/jquery.panzoom.min.js"></script>
+
+    <!-- <script src="javascripts/Chart.bundle.min.js"></script> -->
+  
+    
+    <script>
+      $('.slider').slider({
+        formatter: function(value) {
+          return 'Current value: ' + value;
+        }
+      });
+
+      // this enables the inputs to have the labels in it, 
+      // and when clicked animates the label to the top
+      $( '.js-float-label-wrapper' ).FloatLabel();
+
+
+      $('.datepicker').datepicker();
+
+      $("#patents-meter").myfunc({
+        divFact:10,
+        eventListenerType:'keyup',
+        initDeg : -90
+      });
+
+
+      (function() {
+          var $section = $('body');
+          $section.find('.panzoom').panzoom({
+            $zoomIn: $section.find(".zoom-in"),
+            $zoomOut: $section.find(".zoom-out"),
+            $zoomRange: $section.find(".zoom-range"),
+            $reset: $section.find(".reset"),
+            startTransform: 'scale(1.1)',
+            increment: 0.1,
+            minScale: 1,
+            contain: 'automatic'
+          }).panzoom('zoom');
+        })();
+
+      // $("#demo").myfunc({
+      //   maxVal  : 180, // Max value of the meter
+      //   divFact : 10,  // Division value of the meter
+      //   dangerLevel : 120, // more than this leval, color will be red
+      //   initDeg : -45, // reading begins angle
+      //   maxDeg  : 270, // total angle of the meter reading
+      //   edgeRadius  : 150, // radius of the meter circle
+      //   speedNobeH  : 4,   // speed nobe height
+      //   speedoNobeW : 95,  // speed nobe width
+      //   speedoNobeL : 13,  // speed nobe left position
+      //   indicatorRadius : 125, // radius of indicators position
+      //   indicatorNumbRadius : 90,  // radius of numbers position
+      //   speedPositionTxtWH  : 80,  // speedo-meter current value cont
+      //   nobW: 20,  // indicator nob width
+      //   nobH: 4,   // indicator nob height
+      //   numbW   : 30,  // indicator number width
+      //   numbH   : 16,  // indicator number height
+      //   midNobW : 10,  // indicator mid nob width
+      //   midNobH : 3,   // indicator mid nob height
+      //   noOfSmallDiv: 2,   // no of small div between main div
+      //   eventListenerType   : 'change',// no of small div between main div
+      // });
+
+      // var ctx = document.getElementById("myChart");
+      // var myChart = new Chart(ctx, {
+      //     type: 'pie',
+      //     data: {
+      //         labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+      //         datasets: [{
+      //             label: '# of Votes',
+      //             data: [12, 19, 3, 5, 2, 3],
+      //             backgroundColor: [
+      //                 'rgba(255, 99, 132, 1)',
+      //                 'rgba(54, 162, 235, 1)',
+      //                 'rgba(255, 206, 86, 1)',
+      //                 'rgba(75, 192, 192, 1)',
+      //                 'rgba(153, 102, 255, 1)',
+      //                 'rgba(255, 159, 64, 1)'
+      //             ],
+      //             borderColor: [
+      //                 'rgba(255,99,132,1)',
+      //                 'rgba(54, 162, 235, 1)',
+      //                 'rgba(255, 206, 86, 1)',
+      //                 'rgba(75, 192, 192, 1)',
+      //                 'rgba(153, 102, 255, 1)',
+      //                 'rgba(255, 159, 64, 1)'
+      //             ]
+      //         }]
+      //     },
+      //     options: {
+      //         scales: {
+      //            disaply: false
+      //         },
+      //         legend: {
+      //           display: false
+      //         }
+
+      //     }
+      // });
+      ;
+(function () {
+
+    var listDiv = document.getElementById("list"),
+
+        showConnectionInfo = function (s) {
+            listDiv.innerHTML = s;
+            listDiv.style.display = "block";
+        },
+        hideConnectionInfo = function () {
+            listDiv.style.display = "none";
+        },
+        connections = [],
+        updateConnections = function (conn, remove) {
+            if (!remove) connections.push(conn);
+            else {
+                var idx = -1;
+                for (var i = 0; i < connections.length; i++) {
+                    if (connections[i] == conn) {
+                        idx = i;
+                        break;
+                    }
+                }
+                if (idx != -1) connections.splice(idx, 1);
+            }
+            if (connections.length > 0) {
+                var s = "<span><strong>Connections</strong></span><br/><br/><table><tr><th>Scope</th><th>Source</th><th>Target</th></tr>";
+                for (var j = 0; j < connections.length; j++) {
+                    s = s + "<tr><td>" + connections[j].scope + "</td>" + "<td>" + connections[j].sourceId + "</td><td>" + connections[j].targetId + "</td></tr>";
+                }
+                showConnectionInfo(s);
+            } else
+                hideConnectionInfo();
+        };
+
+    jsPlumb.ready(function () {
+
+        var instance = jsPlumb.getInstance({
+            DragOptions: { cursor: 'pointer', zIndex: 2000 },
+            PaintStyle: { stroke: '#666' },
+            EndpointHoverStyle: { fill: "orange" },
+            HoverPaintStyle: { stroke: "orange" },
+            EndpointStyle: { width: 20, height: 16, stroke: '#666' },
+            Endpoint: "Rectangle",
+            Anchors: ["TopCenter", "TopCenter"],
+            Container: "canvas"
+        });
+
+        // suspend drawing and initialise.
+        instance.batch(function () {
+
+            // bind to connection/connectionDetached events, and update the list of connections on screen.
+            instance.bind("connection", function (info, originalEvent) {
+                updateConnections(info.connection);
+            });
+            instance.bind("connectionDetached", function (info, originalEvent) {
+                updateConnections(info.connection, true);
+            });
+
+            instance.bind("connectionMoved", function (info, originalEvent) {
+                //  only remove here, because a 'connection' event is also fired.
+                // in a future release of jsplumb this extra connection event will not
+                // be fired.
+                updateConnections(info.connection, true);
+            });
+
+            instance.bind("click", function (component, originalEvent) {
+                alert("click!")
+            });
+
+            // configure some drop options for use by all endpoints.
+            var exampleDropOptions = {
+                tolerance: "touch",
+                hoverClass: "dropHover",
+                activeClass: "dragActive"
+            };
+
+            //
+            // first example endpoint.  it's a 25x21 rectangle (the size is provided in the 'style' arg to the Endpoint),
+            // and it's both a source and target.  the 'scope' of this Endpoint is 'exampleConnection', meaning any connection
+            // starting from this Endpoint is of type 'exampleConnection' and can only be dropped on an Endpoint target
+            // that declares 'exampleEndpoint' as its drop scope, and also that
+            // only 'exampleConnection' types can be dropped here.
+            //
+            // the connection style for this endpoint is a Bezier curve (we didn't provide one, so we use the default), with a strokeWidth of
+            // 5 pixels, and a gradient.
+            //
+            // there is a 'beforeDrop' interceptor on this endpoint which is used to allow the user to decide whether
+            // or not to allow a particular connection to be established.
+            //
+            // var exampleColor = "#00f";
+            // var exampleEndpoint = {
+            //     endpoint: "Rectangle",
+            //     paintStyle: { width: 25, height: 21, fill: exampleColor },
+            //     isSource: true,
+            //     reattach: true,
+            //     scope: "blue",
+            //     connectorStyle: {
+            //         gradient: {stops: [
+            //             [0, exampleColor],
+            //             [0.5, "#09098e"],
+            //             [1, exampleColor]
+            //         ]},
+            //         strokeWidth: 5,
+            //         stroke: exampleColor,
+            //         dashstyle: "2 2"
+            //     },
+            //     isTarget: true,
+            //     beforeDrop: function (params) {
+            //         return confirm("Connect " + params.sourceId + " to " + params.targetId + "?");
+            //     },
+            //     dropOptions: exampleDropOptions
+            // };
+
+            //
+            // the second example uses a Dot of radius 15 as the endpoint marker, is both a source and target,
+            // and has scope 'exampleConnection2'.
+            //
+            var color2 = "#316b31";
+            var exampleEndpoint2 = {
+                endpoint: ["Dot", { radius: 11 }],
+                paintStyle: { fill: color2 },
+                isSource: true,
+                scope: "green",
+                connectorStyle: { stroke: color2, strokeWidth: 6 },
+                connector: ["Bezier", { curviness: 63 } ],
+                maxConnections: 3,
+                isTarget: true,
+                dropOptions: exampleDropOptions
+            };
+
+            //
+            // the third example uses a Dot of radius 17 as the endpoint marker, is both a source and target, and has scope
+            // 'exampleConnection3'.  it uses a Straight connector, and the Anchor is created here (bottom left corner) and never
+            // overriden, so it appears in the same place on every element.
+            //
+            // this example also demonstrates the beforeDetach interceptor, which allows you to intercept
+            // a connection detach and decide whether or not you wish to allow it to proceed.
+            //
+            // var example3Color = "rgba(229,219,61,0.5)";
+            // var exampleEndpoint3 = {
+            //     endpoint: ["Dot", {radius: 17} ],
+            //     anchor: "BottomLeft",
+            //     paintStyle: { fill: example3Color, opacity: 0.5 },
+            //     isSource: true,
+            //     scope: 'yellow',
+            //     connectorStyle: {
+            //         stroke: example3Color,
+            //         strokeWidth: 4
+            //     },
+            //     connector: "Straight",
+            //     isTarget: true,
+            //     dropOptions: exampleDropOptions,
+            //     beforeDetach: function (conn) {
+            //         return confirm("Detach connection?");
+            //     },
+            //     onMaxConnections: function (info) {
+            //         alert("Cannot drop connection " + info.connection.id + " : maxConnections has been reached on Endpoint " + info.endpoint.id);
+            //     }
+            // };
+
+            // setup some empty endpoints.  again note the use of the three-arg method to reuse all the parameters except the location
+            // of the anchor (purely because we want to move the anchor around here; you could set it one time and forget about it though.)
+            var e1 = instance.addEndpoint('dragDropWindow1', { anchor: [0.5, 1, 0, 1] }, exampleEndpoint2);
+
+            // setup some DynamicAnchors for use with the blue endpoints
+            // and a function to set as the maxConnections callback.
+            var anchors = [
+                    [1, 0.2, 1, 0],
+                    [0.8, 1, 0, 1],
+                    [0, 0.8, -1, 0],
+                    [0.2, 0, 0, -1]
+                ],
+                maxConnectionsCallback = function (info) {
+                    alert("Cannot drop connection " + info.connection.id + " : maxConnections has been reached on Endpoint " + info.endpoint.id);
+                };
+
+            // var e1 = instance.addEndpoint("dragDropWindow1", { anchor: anchors }, exampleEndpoint);
+            // // you can bind for a maxConnections callback using a standard bind call, but you can also supply 'onMaxConnections' in an Endpoint definition - see exampleEndpoint3 above.
+            // e1.bind("maxConnections", maxConnectionsCallback);
+
+            var e2 = instance.addEndpoint('dragDropWindow2', { anchor: [0.5, 1, 0, 1] }, exampleEndpoint);
+            // again we bind manually. it's starting to get tedious.  but now that i've done one of the blue endpoints this way, i have to do them all...
+            e2.bind("maxConnections", maxConnectionsCallback);
+            instance.addEndpoint('dragDropWindow2', { anchor: "RightMiddle" }, exampleEndpoint2);
+
+            // var e3 = instance.addEndpoint("dragDropWindow3", { anchor: [0.25, 0, 0, -1] }, exampleEndpoint);
+            // e3.bind("maxConnections", maxConnectionsCallback);
+            // instance.addEndpoint("dragDropWindow3", { anchor: [0.75, 0, 0, -1] }, exampleEndpoint2);
+
+            // var e4 = instance.addEndpoint("dragDropWindow4", { anchor: [1, 0.5, 1, 0] }, exampleEndpoint);
+            // e4.bind("maxConnections", maxConnectionsCallback);
+            // instance.addEndpoint("dragDropWindow4", { anchor: [0.25, 0, 0, -1] }, exampleEndpoint2);
+
+            // make .window divs draggable
+            instance.draggable(jsPlumb.getSelector(".drag-drop-demo .window"));
+
+            // add endpoint of type 3 using a selector.
+            instance.addEndpoint(jsPlumb.getSelector(".drag-drop-demo .window"), exampleEndpoint3);
+
+            var hideLinks = jsPlumb.getSelector(".drag-drop-demo .hide");
+            instance.on(hideLinks, "click", function (e) {
+                instance.toggleVisible(this.getAttribute("rel"));
+                jsPlumbUtil.consume(e);
+            });
+
+            var dragLinks = jsPlumb.getSelector(".drag-drop-demo .drag");
+            instance.on(dragLinks, "click", function (e) {
+                var s = instance.toggleDraggable(this.getAttribute("rel"));
+                this.innerHTML = (s ? 'disable dragging' : 'enable dragging');
+                jsPlumbUtil.consume(e);
+            });
+
+            var detachLinks = jsPlumb.getSelector(".drag-drop-demo .detach");
+            instance.on(detachLinks, "click", function (e) {
+                instance.detachAllConnections(this.getAttribute("rel"));
+                jsPlumbUtil.consume(e);
+            });
+
+            instance.on(document.getElementById("clear"), "click", function (e) {
+                instance.detachEveryConnection();
+                showConnectionInfo("");
+                jsPlumbUtil.consume(e);
+            });
+        });
+
+        jsPlumb.fire("jsPlumbDemoLoaded", instance);
+
+    });
+})();
+      // function hideCon(){
+      //     $('.mini-card').each(function(index){
+      //           jsPlumb.hide(this.id, true);
+      //       });
+      // }
+
+      // function showCon(){
+      //     $('.mini-card').each(function(index){
+      //         jsPlumb.show(this.id, true);
+      //     });
+      // }
+
+    </script>
+
+
+  </body>
+</html>
