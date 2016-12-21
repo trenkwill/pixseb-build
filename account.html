@@ -1,0 +1,366 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Pixseb</title>
+
+    <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker3.standalone.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.css">
+    
+    <link href="stylesheets/site.css" rel="stylesheet" />
+    <script src="javascripts/all.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.5.3/css/bootstrap-slider.min.css">
+  </head>
+
+  <body class="account">
+    
+
+
+      <nav class="navbar navbar-primary bg-faded mb0">
+          <a href="./" class="navbar-brand text-uppercase">Pixseb</a>
+          <a class="navbar-brand pl0" href="#">
+          
+          </a>
+          <ul class="nav navbar-nav pull-right">
+            <li class="nav-item">
+              <a class="nav-link p text-medium" href="#"><i class="ionicons ion-chatbox-working color-grey-light mr- pull-left" style="font-size: 24px;"></i>Help</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle p text-medium" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">EN <i class="ionicons ion-chevron-down color-grey-light ml-"></i></a>
+              <div class="dropdown-menu p">
+                <ul class="list-unstyled">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p" href="#">
+                <div class="badge-container">
+                  <i class="fa fa-bell"></i>
+                  <span class="badge">3</span>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+
+              <a class="nav-link clearfix p0 jc-sb at-c dropdown-toggle " data-toggle="dropdown" style="display: flex;" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                  
+                <img src="images/face-1.jpg" class="pull-left mr-" width="60" alt="Face 1" />
+              
+                <div class="pull-left ml df flex-column">
+                  <p class="small color-grey-light">INSA Strasbourg</p> <p class="text-medium">Denis C.</p>
+                </div>
+
+                <i class="ionicons ion-chevron-down pull-right ml mr"></i>
+
+              </a>
+              <div class="dropdown-menu p">
+                <ul class="list-unstyled">
+                  <li><a href="" class="dropdown-item">Profile</a></li>
+                  <li><a href="" class="dropdown-item">Password</a></li>
+                  <li><a href="" class="dropdown-item">Notifications</a></li>
+                  <li><a href="" class="dropdown-item">Team</a></li>
+                  <li><a href="" class="dropdown-item">Data settings</a></li>
+                  <hr>
+                  <li><a href="" class="dropdown-item color-pink mb0">Disconect</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          
+      </nav>
+
+    <div class="container">
+	<div class="padded">
+		<!-- Nav tabs -->
+		<div class="row no-gutter df">
+			<div class="col-sm-4">
+				<ul class="account__tabs" role="tablist">
+					<li role="presentation" class="active">
+						<a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a>
+					</li>
+					<li role="presentation">
+						<a href="#password" aria-controls="password" role="tab" data-toggle="tab">Password</a>
+					</li>
+					<li role="presentation">
+						<a href="#notifications" aria-controls="notifications" role="tab" data-toggle="tab">Notifications</a>
+					</li>
+					<li role="presentation">
+						<a href="#team" aria-controls="team" role="tab" data-toggle="tab">Team</a>
+					</li>
+					<li role="presentation">
+						<a href="#data-setting" aria-controls="data-setting" role="tab" data-toggle="tab">Data Setting</a>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="col-sm-8">
+				<!-- Tab panes -->
+				<div class="tab-content account__tabs-content">
+
+					<div role="tabpanel" class="tab-pane" id="password">
+
+						<p class="h1 mb">Password</p>
+
+						<form action="" class="home__form">
+						  
+						  <div class="input-wrap js-float-label-wrapper mb">
+						    <label for="">Current Password</label>
+						    <input type="password" name="current" id="current" class="form-control p">
+						  </div>
+
+						  <div class="input-wrap js-float-label-wrapper">
+						    <label for="">New Password</label>
+						    <input type="password" name="current" id="current" class="form-control p">
+						  </div>
+						  
+						  <input type="submit" value="Submit" class="btn btn-lg btn-outline-blue color-blue bg-white mt">
+						</form>
+					</div>
+
+					<!-- Profile tab -->
+					<div role="tabpanel" class="tab-pane active" id="profile">
+
+
+						<p class="h1 mb">Profile</p>
+
+						<div class="clearfix mb">
+							<img src="images/face-1.jpg" class="pull-left mr- img-circle" width="60" alt="Face 1" />
+							<div class="pull-left text-center">
+								<a href="#" class="btn btn-outline-blue">Download</a><br>
+								<a href="#" class="color-grey font-14">Delete</a>
+							</div>
+						</div>
+
+						<form action="" class="account__form">
+
+						  <div class="js-float-label-wrapper mb">
+						    <label for="">First Name</label>
+						    <input type="text" name="firstname" id="firstname" class="form-control p">
+						  </div>
+						  <div class="js-float-label-wrapper mb">
+						    <label for="">Last Name</label>
+						    <input type="text" name="lastname" id="lastname" class="form-control p">
+						  </div>
+						  <div class="js-float-label-wrapper mb">
+						    <label for="">Email</label>
+						    <input type="email" name="email" id="email" class="form-control p">
+						  </div>
+						  <div class="js-float-label-wrapper mb">
+						    <label for="">Password</label>
+						    <input type="password" name="password" id="password" class="form-control p">
+						  </div>
+
+						  <div class="js-float-label-wrapper mb">
+						    <label for="">Organisation</label>
+						    <input type="text" name="organisation" id="organisation" class="form-control p">
+						  </div>
+
+
+						  <div class="js-float-label-wrapper mb">
+						    <label for="">Birthday</label>
+
+						    <div class="input-group form-control date" data-provide="datepicker">
+                    			<input type="text" class="form-control p" placeholder="Birthday">
+			                    <div class="input-group-addon p0" style="left: 0px;">
+			                      <i class="ionicons ion-chevron-down"></i>
+			                    </div>
+                			</div>
+						  </div>
+
+
+						  <div class="js-float-label-wrapper mb">
+						    <label for="">Country</label>
+						    <input type="text" name="country" id="country" class="form-control p">
+						  </div>
+
+						  <div class="text-center">
+						  	<input type="submit" value="Save" class="btn btn-lg btn-outline-blue color-blue bg-white mt">
+						  </div>
+						</form>
+
+
+
+
+					</div>
+
+
+
+
+
+					<!-- Password tab -->
+					
+
+
+
+
+
+
+					<!-- Notification tab -->
+					<div role="tabpanel" class="tab-pane" id="notifications">
+						<p class="h1 mb">Notifications</p>
+
+						<div class="row">
+							<div class="col-sm-6">
+								<form action="">
+									<div class="pt- pb clearfix">
+										<span class="pull-left">Label de la newsletter</span>
+										<div class="toggle-wrap mt- pull-right">
+											<input type="checkbox" id="newsletter-1" name="" value="">
+											<div class="toggle">
+												<label for="newsletter-1"><i></i></label>
+											</div>
+										</div>
+									</div>
+									<div class="pt- pb clearfix">
+										<span class="pull-left">Label de la newsletter</span>
+										<div class="toggle-wrap mt- pull-right">
+											<input type="checkbox" id="newsletter-2" name="" value="">
+											<div class="toggle">
+												<label for="newsletter-2"><i></i></label>
+											</div>
+										</div>
+									</div>
+									<div class="pt- pb clearfix">
+										<span class="pull-left">Label de la newsletter</span>
+										<div class="toggle-wrap mt- pull-right">
+											<input type="checkbox" id="newsletter-3" name="" value="">
+											<div class="toggle">
+												<label for="newsletter-3"><i></i></label>
+											</div>
+										</div>
+									</div>
+									<div class="pt- pb clearfix">
+										<span class="pull-left">Label de la newsletter</span>
+										<div class="toggle-wrap mt- pull-right">
+											<input type="checkbox" id="newsletter-4" name="" value="">
+											<div class="toggle">
+												<label for="newsletter-4"><i></i></label>
+											</div>
+										</div>
+									</div>
+										<input type="submit" value="Save" class="btn btn-lg btn-outline-blue color-blue bg-white mt">
+								</form>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- Team tab -->
+					<div role="tabpanel" class="tab-pane" id="team">
+
+						<p class="h1 mb">INSA Strasbourg team</p>
+
+						<ul class="list-unstyled">
+							<li class="clearfix mb">
+								<img src="images/face-1.jpg" class="pull-left mr- img-circle" width="60" alt="Face 1" />
+								<p class="pull-left mt">Denis Cavallucci (You)</p>
+								
+							</li>
+
+							<li class="clearfix mb">
+								<img src="images/face-1.jpg" class="pull-left mr- img-circle" width="60" alt="Face 1" />
+								<p class="pull-left mt">Robert Ortero</p>
+								
+							</li>
+
+							<li class="clearfix mb">
+								<img src="images/face-1.jpg" class="pull-left mr- img-circle" width="60" alt="Face 1" />
+								<p class="pull-left mt">Robert Ortero</p>
+								
+							</li>
+							<li class="clearfix mb">
+								<img src="images/face-1.jpg" class="pull-left mr- img-circle" width="60" alt="Face 1" />
+								<p class="pull-left mt">Robert Ortero</p>
+								
+							</li>
+
+							<a href="#" class="btn btn-lg color-white bg-blue mt">Add a member</a>
+							<br>
+
+							<a href="#" class="btn btn-outline-blue  color-blue bg-white mt">Save</a>
+
+
+							
+						</ul>
+
+					</div>
+
+
+					<!-- Data Settings tab -->
+					<div role="tabpanel" class="tab-pane" id="data-setting">
+						<p class="h1 mb">Data settings</p>
+
+						<a href="#" class="btn btn-lg color-white bg-blue mt">Upload a database</a>
+						<br>
+						<a href="#" class="btn btn-lg color-white bg-blue mt">Connect a database</a>
+							<br>
+
+							<a href="#" class="btn btn-outline-blue  color-blue bg-white mt">Save</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.5.3/bootstrap-slider.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
+
+<script src="javascripts/jquery.FloatLabel.js"></script>
+
+<script src="javascripts/speedometer.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.0.7/jsPlumb.min.js"></script>
+
+<script src="javascripts/jquery.panzoom.min.js"></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.js'></script>
+
+<script src="javascripts/Chart.bundle.min.js"></script>
+<style>
+	.js-float-label-wrapper.focused label, .js-float-label-wrapper.populated label {
+		top: 4px !important;
+		left: 17px !important;
+		font-size: 12px !important;
+	}
+</style>
+<script>
+	// this enables the inputs to have the labels in it, 
+	// and when clicked animates the label to the top
+	$( '.js-float-label-wrapper' ).FloatLabel();
+
+	$(document).ready(function() {
+    // show active tab on reload
+    if (location.hash !== '') $('a[href="' + location.hash + '"]').tab('show');
+
+    // remember the hash in the URL without jumping
+    $('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
+       if(history.pushState) {
+            history.pushState(null, null, '#'+$(e.target).attr('href').substr(1));
+       } else {
+            location.hash = '#'+$(e.target).attr('href').substr(1);
+       }
+    });
+});
+</script>
+
+  </body>
+</html>
