@@ -39,8 +39,8 @@
               <a class="nav-link dropdown-toggle p text-medium" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">EN <i class="ionicons ion-chevron-down color-grey-light ml-"></i></a>
               <div class="dropdown-menu p">
                 <ul class="list-unstyled">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">EN</a></li>
+                  <li><a class="dropdown-item" href="#">FR</a></li>
                 </ul>
               </div>
             </li>
@@ -133,7 +133,7 @@
           <li>Categorizarion</li>
           <li>Connection PBSOL</li>
           <li class="active">Contradictions</li>
-          <li>Business Drivers</li>
+          <li class="next">Business Drivers</li>
           <li class="next">Evaluation criteria</li>
           <li class="next">Evaluation</li>
         </ul>
@@ -165,18 +165,18 @@
       </div>
 
 
-      <div class="card mb">
+      <div class="card animated mb">
 
         <div class="card__handles">
-          <i class="ionicons ion-ios-arrow-up color-white"></i>
-          <i class="ionicons ion-ios-arrow-down color-white"></i>
+          <i class="ionicons ion-ios-arrow-up color-white js-move-up"></i>
+          <i class="ionicons ion-ios-arrow-down color-white js-move-down"></i>
         </div>
 
-        <div class="p+">
+        <div class="contradictions p+">
 
             <p class="h1 pull-left">TC1</p>
 
-            <table class="table table-bordered bg-white mb0" style="margin-left: 50%; width: 50%;">
+            <table class="table table-bordered bg-white mb0 contradictions__tb-header">
               <tr>
                 <th colspan="2"><div class="text-center">Action parameter</div></th>
               </tr>
@@ -230,18 +230,18 @@
         </div>
       </div>
 
-      <div class="card mb">
+      <div class="card animated mb">
 
         <div class="card__handles">
-          <i class="ionicons ion-ios-arrow-up color-white"></i>
-          <i class="ionicons ion-ios-arrow-down color-white"></i>
+          <i class="ionicons ion-ios-arrow-up color-white js-move-up"></i>
+          <i class="ionicons ion-ios-arrow-down color-white js-move-down"></i>
         </div>
 
-        <div class="p+">
+        <div class="contradictions p+">
 
             <p class="h1 pull-left">TC2</p>
 
-            <table class="table table-bordered bg-white mb0" style="margin-left: 50%; width: 50%;">
+            <table class="table table-bordered bg-white mb0 contradictions__tb-header">
               <tr>
                 <th colspan="2"><div class="text-center">Action parameter</div></th>
               </tr>
@@ -295,18 +295,18 @@
         </div>
       </div>
 
-      <div class="card mb">
+      <div class="card animated mb">
 
         <div class="card__handles">
-          <i class="ionicons ion-ios-arrow-up color-white"></i>
-          <i class="ionicons ion-ios-arrow-down color-white"></i>
+          <i class="ionicons ion-ios-arrow-up color-white js-move-up"></i>
+          <i class="ionicons ion-ios-arrow-down color-white js-move-down"></i>
         </div>
 
-        <div class="p+">
+        <div class="contradictions p+">
 
             <p class="h1 pull-left">TC3</p>
 
-            <table class="table table-bordered bg-white mb0" style="margin-left: 50%; width: 50%;">
+            <table class="table table-bordered bg-white mb0 contradictions__tb-header">
               <tr>
                 <th colspan="2"><div class="text-center">Action parameter</div></th>
               </tr>
@@ -373,11 +373,56 @@
 	<div class="pull-right">
 	  	<div class="clearfix">
 	  		<p class="color-white pull-left mr">Last modified on 03/12/2017 à 12:17, <br>Par Denis C. - INSA</p>
-	  		<a href="transition-5.html" class="btn btn-default color-blue-2 pull-right">Continue</a>
+	  		<a href="transition-5.html" class="btn btn-default color-blue-2 pull-right js-btn-loading">Continue</a>
 	  	</div>
 	</div>
 
 </nav>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.5.3/bootstrap-slider.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
+
+<script src="javascripts/jquery.FloatLabel.js"></script>
+
+<script src="javascripts/speedometer.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.0.7/jsPlumb.min.js"></script>
+
+<script src="javascripts/jquery.panzoom.min.js"></script>
+
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<!-- <script src="http://d3js.org/d3.v3.min.js"></script> -->
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.js'></script>
+
+<script src="javascripts/Chart.bundle.min.js"></script>
+
+<script> 
+  $(".js-move-down").click(function(){
+    var card = $(this).parent().parent();
+    var nextCard = card.next(".card");
+    if (nextCard.length) {
+      nextCard.removeClass("slideInUp slideInDown wobble").addClass("slideInUp");
+      card.removeClass("slideInUp slideInDown wobble").addClass("slideInDown").insertAfter(nextCard);
+    }
+  });
+  $(".js-move-up").click(function(){
+    var card = $(this).parent().parent();
+    var prevCard = card.prev(".card");
+    if (prevCard.length) {
+      prevCard.removeClass("slideInUp slideInDown wobble").addClass("slideInDown");
+      card.removeClass("slideInUp slideInDown wobble").addClass("slideInUp").insertBefore(prevCard);
+    }
+  });
+
+  
+</script>
+  
   </body>
 </html>

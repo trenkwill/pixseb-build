@@ -39,8 +39,8 @@
               <a class="nav-link dropdown-toggle p text-medium" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">EN <i class="ionicons ion-chevron-down color-grey-light ml-"></i></a>
               <div class="dropdown-menu p">
                 <ul class="list-unstyled">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">EN</a></li>
+                  <li><a class="dropdown-item" href="#">FR</a></li>
                 </ul>
               </div>
             </li>
@@ -97,9 +97,9 @@
         <ul class="breadcrumbs">
           <li>Sélection</li>
           <li>Categorizarion</li>
-          <li>Extraction</li>
-          <li>Contradictions</li>
-          <li class="active">Business Drivers</li>
+          <li class="active">Connection PBSOL</li>
+          <li class="next">Contradictions</li>
+          <li class="next">Business Drivers</li>
           <li class="next">Evaluation criteria</li>
           <li class="next">Evaluation</li>
         </ul>
@@ -117,11 +117,15 @@
   </div>
   </div>
 
-<div class="padded">  <div class="loading">
-    <div class="loading__dot"></div>
-    <div class="loading__line"></div>
-    <div class="loading__mask"></div>
-  </div>
+<div class="padded"><div class="animated bounceInLeft">
+	<div class="loading">
+		<div class="loading__dot"></div>
+		<div class="loading__line"></div>
+		<div class="loading__mask"></div>
+	</div>
+	<p class="animated bounceInLeft text-center text-condensed mt color-grey-light">Saving</p>
+</div>
+
 </div>
 
 
@@ -132,11 +136,42 @@
 	<div class="pull-right">
 	  	<div class="clearfix">
 	  		<p class="color-white pull-left mr">Saving... <br>Par Denis C. - INSA</p>
-	  		<a href="analysis-4.html" class="btn btn-default color-blue-2 pull-right">Continue</a>
+	  		<a href="analysis-4.html" class="btn btn-default color-blue-2 pull-right js-btn-loading">Continue</a>
 	  	</div>
 	</div>
 
 </nav>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.5.3/bootstrap-slider.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
+
+<script src="javascripts/jquery.FloatLabel.js"></script>
+
+<script src="javascripts/speedometer.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.0.7/jsPlumb.min.js"></script>
+
+<script src="javascripts/jquery.panzoom.min.js"></script>
+
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<!-- <script src="http://d3js.org/d3.v3.min.js"></script> -->
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.js'></script>
+
+<script src="javascripts/Chart.bundle.min.js"></script>
+
+<script>
+$(".js-btn-loading").html("Please wait...").addClass("btn-outline color-white").removeClass("bg-white color-blue-2");
+  setTimeout(function(){
+    $(".js-btn-loading").html("Continue").addClass("bg-white color-blue-2").removeClass("btn-outline color-white");
+  }, 3000);
+</script>
+  
   </body>
 </html>
