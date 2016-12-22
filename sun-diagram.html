@@ -39,8 +39,8 @@
               <a class="nav-link dropdown-toggle p text-medium" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">EN <i class="ionicons ion-chevron-down color-grey-light ml-"></i></a>
               <div class="dropdown-menu p">
                 <ul class="list-unstyled">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">EN</a></li>
+                  <li><a class="dropdown-item" href="#">FR</a></li>
                 </ul>
               </div>
             </li>
@@ -127,7 +127,7 @@
 <div class="row no-gutter bg-dark-blue-2 df">
 
     <div class="col-sm-8">
-      <div class="sun-diagram__main">
+      <div class="sun-diagram__frame">
         <img src="images/sun-diagram.svg" class="js-panzoom" alt="Sun diagram" />
       </div>
       
@@ -169,8 +169,10 @@
               </a>
             </li>
           </div>
-          <div class="sun-diagram__mini-map">
+          <div class="sun-diagram__mini-map js-panzoom-2">
               <div class="rectangle"></div>
+
+              
           </div>
       </div>
 
@@ -186,7 +188,7 @@
 	<div class="pull-right">
 	  	<div class="clearfix">
 	  		<p class="color-white pull-left mr">Last modified on 03/12/2017 à 12:17, <br>Par Denis C. - INSA</p>
-	  		<a href="export.html" class="btn btn-default color-blue-2 pull-right">Continue</a>
+	  		<a href="export.html" class="btn btn-default color-blue-2 pull-right js-btn-loading">Continue</a>
 	  	</div>
 	</div>
 
@@ -208,32 +210,51 @@
 
 <script src="javascripts/jquery.panzoom.min.js"></script>
 
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<!-- <script src="http://d3js.org/d3.v3.min.js"></script> -->
+
 <script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.js'></script>
 
 <script src="javascripts/Chart.bundle.min.js"></script>
 
 <script>
-  (function() {
+  
+    $(function() {
+      
       var $section = $('body');
       $section.find('.js-panzoom').panzoom({
         $zoomIn: $section.find(".js-zoom-in"),
         $zoomOut: $section.find(".js-zoom-out"),
         $zoomRange: $section.find(".js-zoom-range"),
         $reset: $section.find(".js-reset"),
-        startTransform: 'scale(1.1)',
+        startTransform: 'scale(1)',
         increment: 0.1,
         minScale: 1,
+
         contain: 'automatic'
       }).panzoom('zoom');
-    })();
+      
 
-     // $('.js-zoom-range').slider({
-     //    formatter: function(value) {
-     //      return 'Current value: ' + value;
-     //    }
-     //  });
+      var frameHeight = $(".sun-diagram__frame").height(),
+      frameWidth = $(".sun-diagram__frame").width(),
+      rectangleLeftPos =  $(".rectangle").css("left");
+
+      console.log(rectangleLeftPos);
+
+      $( ".rectangle" ).draggable({
+          containment: ".sun-diagram__mini-map",
+          drag: function(event, ui) {
+                var pos = ui.position;
+                console.log(pos.left-150 + " " + pos.top);
+
+                var $section = $('body');
+                $section.find('.js-panzoom').panzoom("pan", -pos.left-150, -pos.top);
+            }
+      });      
+    });
 
 </script>
-
+  
   </body>
 </html>

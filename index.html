@@ -34,24 +34,33 @@
 	    </a>
 	    <ul class="nav navbar-nav pull-left">
 	      <li class="nav-item">
-	      	<a href="home.html" class="nav-link p text-medium">Concept</a>
+	      	<a href="#concept" class="nav-link p text-medium">Concept</a>
 	      </li>
 	      <li class="nav-item">
-	      	<a href="home.html" class="nav-link p text-medium">Testimonials</a>
+	      	<a href="#testimonials" class="nav-link p text-medium">Testimonials</a>
 	      </li>
 	      <li class="nav-item">
-	      	<a href="home.html" class="nav-link p text-medium">Team</a>
+	      	<a href="#team" class="nav-link p text-medium">Team</a>
 	      </li>
 	
 	    </ul>
 	    <ul class="nav navbar-nav pull-right">
 	
 	      <li class="nav-item">
-	     	 <a href="home.html" class="nav-link p text-medium">Pricing</a>
+	     	 <a href="#" class="nav-link p text-medium">Pricing</a>
 	      </li>
 	
-		  <li class="nav-item">
-		  <a href="home.html" class="nav-link p text-medium">EN</a>
+		  
+	      <li class="nav-item dropdown mr-">
+	        <a class="nav-link dropdown-toggle p text-medium" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+	        	EN 
+	        	<i class="ionicons ion-chevron-down ml-"></i></a>
+		        <div class="dropdown-menu p">
+		          <ul class="list-unstyled">
+		            <li><a class="dropdown-item" href="#">EN</a></li>
+		            <li><a class="dropdown-item" href="#">FR</a></li>
+		          </ul>
+		        </div>
 	      </li>
 	
 	      <a href="#signup" class="nav-item btn btn-outline color-white"  data-toggle="modal">Sign up</a>
@@ -83,7 +92,7 @@
 	<a href="#" class="btn bg-pink btn-lg color-white">Sign in</a>
 </div>
 
-<div class="bg-white padded">
+<div class="bg-white padded" id="concept">
 
 	<h2 class="color-blue text-center text-condensed">Concept</h2>
 	<div class="container">
@@ -102,7 +111,7 @@
 				</div>
 				<div class="col-sm-4">
 					<img src="images/presentation-icon.png" width="80" class="mb" alt="Presentation icon" />
-					<h2 class="h1 mb">Visualiser</h2>
+					<h2 class="h1 mb">Collaborer</h2>
 					<p>Working with others. Export the complete report. Print The SUN Diagram © in poster. It's planned !</p>
 				</div>
 			</div>
@@ -112,7 +121,7 @@
 </div>
 
 
-<div class=" padded">
+<div class=" padded" id="testimonials">
 
 	
 	<div class="container">
@@ -174,7 +183,7 @@
 </div>
 
 
-<div class="bg-white padded">
+<div class="bg-white padded" id="team">
 
 	
 	<div class="container">
@@ -234,19 +243,19 @@
 	    </a>
 	    <ul class="nav navbar-nav pull-left">
 	      <li class="nav-item">
-	      	<a href="home.html" class="nav-link p text-medium">Press</a>
+	      	<a href="home-initial.html" class="nav-link p text-medium">Press</a>
 	      </li>
 	      <li class="nav-item">
-	      	<a href="home.html" class="nav-link p text-medium">Privacy</a>
+	      	<a href="home-initial.html" class="nav-link p text-medium">Privacy</a>
 	      </li>
 	      <li class="nav-item">
-	      	<a href="home.html" class="nav-link p text-medium">Terms</a>
+	      	<a href="home-initial.html" class="nav-link p text-medium">Terms</a>
 	      </li>
 	      <li class="nav-item">
-	      	<a href="home.html" class="nav-link p text-medium">Help center</a>
+	      	<a href="home-initial.html" class="nav-link p text-medium">Help center</a>
 	      </li>
 	      <li class="nav-item">
-	      	<a href="home.html" class="nav-link p text-medium">Contact</a>
+	      	<a href="home-initial.html" class="nav-link p text-medium">Contact</a>
 	      </li>
 
 	    </ul>
@@ -276,14 +285,14 @@
         <div class="modal-header">
           <button type="button" class="close btn btn-default" data-dismiss="modal" aria-hidden="true">&times;</button>
 
-          <h4 class="modal-title text-center">Connect to INOVIZ</h4>
+          <h4 class="modal-title text-center">Connect to Pixseb</h4>
         </div>
         <div class="modal-body">
           <div class="index__alert clearfix mb-">
             <p class="small-text">Identifiant et/ou mot de passe invalide</p>
             <a href="#" class="small-text">Oublié ?</a>
           </div>
-          <form action="" class="index__form">
+          <form action="home-initial.html" class="index__form">
             <div class="input-wrap js-float-label-wrapper">
               <label for="">Indentifiant</label>
               <input type="text" name="id" id="id" class="form-control">
@@ -293,7 +302,7 @@
               <input type="password" name="current" id="current" class="form-control">
             </div>
             <div class="text-center mt">
-              <input type="submit" value="Login" class="btn btn-lg btn-round btn-dark white p- pl+ pr+ mb">
+              <input type="submit" value="Login" class="btn btn-lg btn-round bg-blue color-white p- pl+ pr+ mb mt">
               <div>
                 <label>
                   <input type="checkbox" id="inlineCheckbox1" value="option1"> Remember me
@@ -305,14 +314,7 @@
         </div>
         <div class="modal-footer">
           <div class="text-center mt">
-            <a value="Login" class="btn btn-lg btn-round btn-blue white p- pl+ pr+">New user ? Sign up</a>
-            <div class="text-center mt mb">Or sign up with</div>
-            <div class="clearfix">
-              <a href="#" class="index__social index__social--facebook"><img src="images/facebook.png" alt="facebook"></a>
-              <a href="#" class="index__social index__social--linkedin"><img src="images/linkedin.png" alt="linkedin"></a>
-              <a href="#" class="index__social index__social--google"><img src="images/google.png" alt="google"></a>
-              <a href="#" class="index__social index__social--linkedin"><img src="images/twitter.png" alt="twitter"></a>
-            </div>
+            <a href="home-initial.html" value="Login" class="btn btn-lg btn-round btn-outline-blue color-blue p- pl+ pr+ mb mt">Sign up</a>
           </div>
         </div>
       </div>
@@ -326,26 +328,26 @@
         <div class="modal-header">
           <button type="button" class="close btn btn-default" data-dismiss="modal" aria-hidden="true">&times;</button>
 
-          <h4 class="modal-title text-center">Signup to INOVIZ</h4>
+          <h4 class="modal-title text-center">Signup to Pixseb</h4>
         </div>
         <div class="modal-body">
-          <ul class="mb pl">
-            <li class="mb-">Bénéfice : lorem ipsum dolor sit amet</li>
-            <li class="mb-">Bénéfice : lorem ipsum dolor sit amet</li>
-            <li class="mb-">Bénéfice : lorem ipsum dolor sit amet</li>
+          <ul class="p">
+            <li class="font-14 mb-">Bénéfice : lorem ipsum dolor sit amet</li>
+            <li class="font-14 mb-">Bénéfice : lorem ipsum dolor sit amet</li>
+            <li class="font-14 mb-">Bénéfice : lorem ipsum dolor sit amet</li>
           </ul>
           <!-- Alert is hidden (display none) -->
           <div class="index__alert clearfix mb-">
             <p class="small-text">Identifiant et/ou mot de passe invalide</p>
             <a href="#" class="small-text">Oublié ?</a>
           </div>
-          <form action="" class="index__form">
+          <form action="home-initial.html" class="index__form">
             <div class="input-wrap js-float-label-wrapper">
-              <label for="">Prénom</label>
+              <label for="">First name</label>
               <input type="text" name="firstname" id="firstname" class="form-control">
             </div>
             <div class="input-wrap js-float-label-wrapper">
-              <label for="">Nom</label>
+              <label for="">Last name</label>
               <input type="text" name="lastname" id="lastname" class="form-control">
             </div>
             <div class="input-wrap js-float-label-wrapper">
@@ -366,21 +368,15 @@
                   <input type="checkbox" id="inlineCheckbox1" value="option1"> I accept terms &amp; conditions
                 </label>
               </div>
-              <input type="submit" value="Sign up for free" class="btn btn-lg btn-round btn-dark white p- pl+ pr+ mb mt-">
+              <input type="submit" value="Sign up for free" class="btn btn-lg btn-round bg-blue color-white p- pl+ pr+ mb mt">
               
             </div>
           </form>
         </div>
         <div class="modal-footer">
           <div class="text-center mt">
-            <a value="Login" class="btn btn-lg btn-round btn-blue white p- pl+ pr+">Already a user ? Login</a>
-            <div class="text-center mt mb">Or login with</div>
-            <div class="clearfix">
-              <a href="#" class="index__social index__social--facebook"><img src="images/facebook.png" alt="facebook"></a>
-              <a href="#" class="index__social index__social--linkedin"><img src="images/linkedin.png" alt="linkedin"></a>
-              <a href="#" class="index__social index__social--google"><img src="images/google.png" alt="google"></a>
-              <a href="#" class="index__social index__social--linkedin"><img src="images/twitter.png" alt="twitter"></a>
-            </div>
+            <a href="home-initial.html" value="Login" class="btn btn-lg btn-round btn-outline-blue color-blue p- pl+ pr+ mb">Login</a>
+           
           </div>
         </div>
       </div>
@@ -403,14 +399,26 @@
 
 <script src="javascripts/jquery.panzoom.min.js"></script>
 
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<!-- <script src="http://d3js.org/d3.v3.min.js"></script> -->
+
 <script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.js'></script>
 
 <script src="javascripts/Chart.bundle.min.js"></script>
 
   <script>
   	$( '.js-float-label-wrapper' ).FloatLabel();
+
+  	$(document).on('click', 'a', function(event){
+  	    event.preventDefault();
+
+  	    $('html, body').animate({
+  	        scrollTop: $( $.attr(this, 'href') ).offset().top
+  	    }, 500);
+  	});
   </script>
 
-
+  
   </body>
 </html>
