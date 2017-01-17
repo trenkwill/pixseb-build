@@ -9,12 +9,12 @@
     <title>Pixseb</title>
 
     <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
-    
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker3.standalone.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.css">
-    
+
     <link href="stylesheets/site.css" rel="stylesheet" />
     <script src="javascripts/all.js"></script>
 
@@ -22,7 +22,7 @@
   </head>
 
   <body class="account">
-    
+
 
 
       <nav class="navbar navbar-primary bg-faded mb0">
@@ -55,9 +55,9 @@
             <li class="nav-item">
 
               <a class="nav-link clearfix p0 jc-sb at-c dropdown-toggle " data-toggle="dropdown" style="display: flex;" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                  
+
                 <img src="images/face-1.jpg" class="pull-left mr-" width="60" alt="Face 1" />
-              
+
                 <div class="pull-left ml df flex-column">
                   <p class="small color-grey-light">INSA Strasbourg</p> <p class="text-medium">Denis C.</p>
                 </div>
@@ -88,7 +88,7 @@
               </div>
             </li>
           </ul>
-          
+
       </nav>
 
     <div class="container">
@@ -114,7 +114,7 @@
 					</li>
 				</ul>
 			</div>
-			
+
 			<div class="col-sm-8">
 				<!-- Tab panes -->
 				<div class="tab-content account__tabs-content">
@@ -124,7 +124,7 @@
 						<p class="h1 mb">Password</p>
 
 						<form action="" class="home__form">
-						  
+
 						  <div class="input-wrap js-float-label-wrapper mb">
 						    <label for="">Current Password</label>
 						    <input type="password" name="current" id="current" class="form-control p">
@@ -134,7 +134,7 @@
 						    <label for="">New Password</label>
 						    <input type="password" name="current" id="current" class="form-control p">
 						  </div>
-						  
+
 						  <input type="submit" value="Submit" class="btn btn-lg btn-outline-blue color-blue bg-white mt">
 						</form>
 					</div>
@@ -179,14 +179,8 @@
 
 
 						  <div class="js-float-label-wrapper mb">
-						    <label for="">Birthday</label>
-
-						    <div class="input-group form-control date" data-provide="datepicker">
-                    			<input type="text" class="form-control p" placeholder="Birthday">
-			                    <div class="input-group-addon p0" style="left: 0px;">
-			                      <i class="ionicons ion-chevron-down"></i>
-			                    </div>
-                			</div>
+						    <label for="">Job Position</label>
+						    <input type="text" name="job" id="job" class="form-control p">
 						  </div>
 
 
@@ -195,13 +189,9 @@
 						    <input type="text" name="country" id="country" class="form-control p">
 						  </div>
 
-						  <div class="text-center">
-						  	<input type="submit" value="Save" class="btn btn-lg btn-outline-blue color-blue bg-white mt">
-						  </div>
+						  <input type="submit" value="Save" class="btn btn-lg btn-outline-blue color-blue bg-white mt">
+
 						</form>
-
-
-
 
 					</div>
 
@@ -210,7 +200,7 @@
 
 
 					<!-- Password tab -->
-					
+
 
 
 
@@ -276,24 +266,24 @@
 							<li class="clearfix mb">
 								<img src="images/face-1.jpg" class="pull-left mr- img-circle" width="60" alt="Face 1" />
 								<p class="pull-left mt">Denis Cavallucci (You)</p>
-								
+
 							</li>
 
 							<li class="clearfix mb">
 								<img src="images/face-1.jpg" class="pull-left mr- img-circle" width="60" alt="Face 1" />
 								<p class="pull-left mt">Robert Ortero</p>
-								
+
 							</li>
 
 							<li class="clearfix mb">
 								<img src="images/face-1.jpg" class="pull-left mr- img-circle" width="60" alt="Face 1" />
 								<p class="pull-left mt">Robert Ortero</p>
-								
+
 							</li>
 							<li class="clearfix mb">
 								<img src="images/face-1.jpg" class="pull-left mr- img-circle" width="60" alt="Face 1" />
 								<p class="pull-left mt">Robert Ortero</p>
-								
+
 							</li>
 
 							<a href="#" class="btn btn-lg color-white bg-blue mt">Add a member</a>
@@ -302,7 +292,7 @@
 							<a href="#" class="btn btn-outline-blue  color-blue bg-white mt">Save</a>
 
 
-							
+
 						</ul>
 
 					</div>
@@ -330,8 +320,6 @@
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.5.3/bootstrap-slider.min.js"></script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
 
 <script src="javascripts/jquery.FloatLabel.js"></script>
@@ -349,6 +337,29 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.js'></script>
 
 <script src="javascripts/Chart.bundle.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.5.3/bootstrap-slider.min.js"></script>
+
+
+<script>
+	jQuery.fn.extend({
+	  toggleText: function (a, b){
+	      var that = this;
+	          if (that.text() != a && that.text() != b){
+	              that.text(a);
+	          }
+	          else
+	          if (that.text() == a){
+	              that.text(b);
+	          }
+	          else
+	          if (that.text() == b){
+	              that.text(a);
+	          }
+	      return this;
+	  }
+	});
+</script>
 <style>
 	.js-float-label-wrapper.focused label, .js-float-label-wrapper.populated label {
 		top: 4px !important;
@@ -357,7 +368,7 @@
 	}
 </style>
 <script>
-	// this enables the inputs to have the labels in it, 
+	// this enables the inputs to have the labels in it,
 	// and when clicked animates the label to the top
 	$( '.js-float-label-wrapper' ).FloatLabel();
 
@@ -375,6 +386,7 @@
     });
 });
 </script>
-  
+
+
   </body>
 </html>

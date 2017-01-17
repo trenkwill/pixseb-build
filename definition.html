@@ -9,12 +9,12 @@
     <title>Pixseb</title>
 
     <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
-    
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker3.standalone.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.css">
-    
+
     <link href="stylesheets/site.css" rel="stylesheet" />
     <script src="javascripts/all.js"></script>
 
@@ -22,7 +22,7 @@
   </head>
 
   <body class="definition">
-    
+
 
 
       <nav class="navbar navbar-primary bg-faded mb0">
@@ -56,9 +56,9 @@
             <li class="nav-item">
 
               <a class="nav-link clearfix p0 jc-sb at-c dropdown-toggle " data-toggle="dropdown" style="display: flex;" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                  
+
                 <img src="images/face-1.jpg" class="pull-left mr-" width="60" alt="Face 1" />
-              
+
                 <div class="pull-left ml df flex-column">
                   <p class="small color-grey-light">INSA Strasbourg</p> <p class="text-medium">Denis C.</p>
                 </div>
@@ -89,7 +89,7 @@
               </div>
             </li>
           </ul>
-          
+
       </nav>
 
     
@@ -165,8 +165,8 @@
             <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
           </div>
         </div>
-      
-        
+
+
         <div class="card p mb">
           <div class="row">
             <div class="col-xs-6">
@@ -187,31 +187,31 @@
             </div>
           </div>
         </div>
-        
+
         <div class="card clearfix mb p">
           <p class="color-grey-light font-14 mb">Members</p>
           <div class="clearfix mb">
             <img src="images/face-1.jpg" class="img-circle pull-left mr" width="45" alt="Face 1" />
             <div class="clearfix mt-">
               <p class="pull-left color-grey">Denis Cavallucci</p>
-              <a href="#" class="pull-right  color-grey-light"><i class="ionicons ion-close"></i></a>
+              <a href="#" class="pull-right  color-grey-light js-remove-member"><i class="ionicons ion-close"></i></a>
             </div>
           </div>
           <div class="clearfix mb">
             <img src="images/face-2.jpg" class="img-circle pull-left mr" width="45" alt="Face 2" />
             <div class="clearfix mt-">
               <p class="pull-left color-grey">Denis Cavallucci</p>
-              <a href="#" class="pull-right  color-grey-light"><i class="ionicons ion-close"></i></a>
+              <a href="#" class="pull-right  color-grey-light js-remove-member"><i class="ionicons ion-close"></i></a>
             </div>
           </div>
           <div class="clearfix mb">
             <img src="images/face-3.jpg" class="img-circle pull-left mr" width="45" alt="Face 3" />
             <div class="clearfix mt-">
               <p class="pull-left color-grey">Denis Cavallucci</p>
-              <a href="#" class="pull-right  color-grey-light"><i class="ionicons ion-close"></i></a>
+              <a href="#" class="pull-right  color-grey-light js-remove-member"><i class="ionicons ion-close"></i></a>
             </div>
           </div>
-          <a href="#" class="btn btn--plus mt">Add a member</a>
+          <a href="#" class="btn btn--plus mt js-add-member">Add a member</a>
         </div>
 
         <div class="card clearfix mb p">
@@ -222,10 +222,10 @@
               <p class="pull-left color-grey">Rapport_20129282.docx</p>
               <div class="pull-right list-inline">
                 <li>
-                  <a href="#" class="color-grey-light"><i class="ionicons ion-eye font-18"></i></a>
+                  <a href="#" class="color-grey-light" data-toggle="modal" data-target="#see-file"><i class="ionicons ion-eye font-18"></i></a>
                 </li>
                 <li>
-                  <a href="#" class="color-grey-light"><i class="ionicons ion-close"></i></a>
+                  <a href="#" class="color-grey-light js-remove-file"><i class="ionicons ion-close"></i></a>
                 </li>
               </div>
             </div>
@@ -236,10 +236,10 @@
               <p class="pull-left color-grey">Rapport_20129282.docx</p>
               <div class="pull-right list-inline">
                 <li>
-                  <a href="#" class="color-grey-light"><i class="ionicons ion-eye font-18"></i></a>
+                  <a href="#" class="color-grey-light" data-toggle="modal" data-target="#see-file"><i class="ionicons ion-eye font-18"></i></a>
                 </li>
                 <li>
-                  <a href="#" class="color-grey-light"><i class="ionicons ion-close"></i></a>
+                  <a href="#" class="color-grey-light js-remove-file"><i class="ionicons ion-close"></i></a>
                 </li>
               </div>
             </div>
@@ -250,20 +250,39 @@
               <p class="pull-left color-grey">Rapport_20129282.docx</p>
               <div class="pull-right list-inline">
                 <li>
-                  <a href="#" class="color-grey-light"><i class="ionicons ion-eye font-18"></i></a>
+                  <a href="#" class="color-grey-light" data-toggle="modal" data-target="#see-file"><i class="ionicons ion-eye font-18"></i></a>
                 </li>
                 <li>
-                  <a href="#" class="color-grey-light"><i class="ionicons ion-close"></i></a>
+                  <a href="#" class="color-grey-light js-remove-file"><i class="ionicons ion-close"></i></a>
                 </li>
               </div>
             </div>
           </div>
-          <a href="#" class="btn btn--plus mt">Add a file</a>
+          <a href="#" class="btn btn--plus mt js-add-file">Add a file</a>
         </div>
-          
+
       </form>
     </div>
   </div>
+
+  <div class="modal fade" id="see-file">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Rapport_20129282.docx</h4>
+        </div>
+        <div class="modal-body">
+          <iframe src="http://www.cmefe.ch/cours/Notes/CMEFE-rapportscientifique.pdf" frameborder="0" width="100%" height="700"></iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 </div><!-- container -->
 
 <nav class="navbar navbar-action navbar-fixed-bottom p-">
@@ -283,8 +302,6 @@
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.5.3/bootstrap-slider.min.js"></script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
 
 <script src="javascripts/jquery.FloatLabel.js"></script>
@@ -303,14 +320,66 @@
 
 <script src="javascripts/Chart.bundle.min.js"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.5.3/bootstrap-slider.min.js"></script>
+
+
+<script>
+	jQuery.fn.extend({
+	  toggleText: function (a, b){
+	      var that = this;
+	          if (that.text() != a && that.text() != b){
+	              that.text(a);
+	          }
+	          else
+	          if (that.text() == a){
+	              that.text(b);
+	          }
+	          else
+	          if (that.text() == b){
+	              that.text(a);
+	          }
+	      return this;
+	  }
+	});
+</script>
+
 <script>
 
   $('.datepicker').datepicker();
 
   $( '.js-float-label-wrapper' ).FloatLabel();
+
+  $('.js-remove-member').click(function(e){
+      e.preventDefault();
+      $(this).parent().parent().fadeOut();
+  });
+
+  $('.js-remove-file').click(function(e){
+      e.preventDefault();
+      $(this).parent().parent().parent().parent().fadeOut();
+  });
+
+  $(".js-add-member").click(function(e){
+    e.preventDefault();
+    var newMember = $(
+      "<div class='row mb'>" +
+            "<div class='col-sm-4'><p class='color-grey-light font-14 mb0'>Member's picture</p><input type='file' class='form-control-2' /></div>" +
+              "<div class='col-sm-8'><input type='text' class='form-control' placeholder='Name' /></div>" +
+          "</div>");
+    $(this).before(newMember);
+  });
+
+  $(".js-add-file").click(function(e){
+    e.preventDefault();
+    var newMember = $(
+      "<div class='row mb'>" +
+            "<div class='col-sm-12'><p class='color-grey-light font-14 mb0'>Member's picture</p><input type='file' class='form-control-2' /></div>" +
+          "</div>");
+    $(this).before(newMember);
+  });
 </script>
 
 
-  
+
   </body>
 </html>

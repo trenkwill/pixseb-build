@@ -9,12 +9,12 @@
     <title>Pixseb</title>
 
     <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
-    
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker3.standalone.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.css">
-    
+
     <link href="stylesheets/site.css" rel="stylesheet" />
     <script src="javascripts/all.js"></script>
 
@@ -22,7 +22,7 @@
   </head>
 
   <body class="analysis-5">
-    
+
 
 
       <nav class="navbar navbar-primary bg-faded mb0">
@@ -55,9 +55,9 @@
             <li class="nav-item">
 
               <a class="nav-link clearfix p0 jc-sb at-c dropdown-toggle " data-toggle="dropdown" style="display: flex;" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                  
+
                 <img src="images/face-1.jpg" class="pull-left mr-" width="60" alt="Face 1" />
-              
+
                 <div class="pull-left ml df flex-column">
                   <p class="small color-grey-light">INSA Strasbourg</p> <p class="text-medium">Denis C.</p>
                 </div>
@@ -88,7 +88,7 @@
               </div>
             </li>
           </ul>
-          
+
       </nav>
 
     <nav class="navbar navbar-secondary bg-faded pt-- pb--">
@@ -152,95 +152,97 @@
 </div>
 
 
-<div class="container">
+<div class="container mb+ pb+">
   <div class="row no-gutter">
     <div class="col-sm-8">
 
       <div class="card card--separator p pt+">
-
+        
         <div class="clearfix">
           <h1 class="pull-left text-bold">
             12 business drivers
           </h1>
           <div class="pull-right">
-            <a href="#" class="btn btn-default color-blue">Edit</a>
+            <a href="#" class="btn btn-default color-blue js-edit-drivers">Edit</a>
           </div>
         </div>
       </div>
 
       <div class="card card--separator p">
-        <a href="#" class="btn btn--plus">Add a business driver</a>
+        <a href="#" class="btn btn--plus js-add-driver">Add a business driver</a>
       </div>
-        
-        
-      <div class="card card--separator p">
 
+
+      <div class="card card--separator p">
+          <i class='card__delete ionicons ion-android-close white js-remove-driver pull-left mr hidden'></i>
           <div class="clearfix">
             <div class="pull-left">Operating effort</div>
-            
+
             <div class="pull-right">
               <input class="slider" data-slider-id='slider-green' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
             </div>
           </div>
-        
+
       </div>
 
 
       <div class="card card--separator p">
-
+          <i class='card__delete ionicons ion-android-close white js-remove-driver pull-left mr hidden'></i>
           <div class="clearfix">
             <div class="pull-left">Noise</div>
-            
+
             <div class="pull-right">
               <input class="slider" data-slider-id='slider-orange' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
             </div>
           </div>
-        
+
       </div>
 
       <div class="card card--separator p">
-
+          <i class='card__delete ionicons ion-android-close white js-remove-driver pull-left mr hidden'></i>
           <div class="clearfix">
             <div class="pull-left">Product cost</div>
-            
+
             <div class="pull-right">
               <input class="slider" data-slider-id='slider-purple' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
             </div>
           </div>
-        
+
       </div>
 
       <div class="card card--separator p">
+          <i class='card__delete ionicons ion-android-close white js-remove-driver pull-left mr hidden'></i>
 
           <div class="clearfix">
             <div class="pull-left">Fail safe</div>
-            
+
             <div class="pull-right">
               <input class="slider" data-slider-id='slider-turquoise' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
             </div>
           </div>
-        
+
       </div>
 
       <div class="card card--separator p">
+          <i class='card__delete ionicons ion-android-close white js-remove-driver pull-left mr hidden'></i>
 
           <div class="clearfix">
             <div class="pull-left">Space Roominess</div>
-            
+
             <div class="pull-right">
               <input class="slider" data-slider-id='slider-blue' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
             </div>
           </div>
-        
+
       </div>
-      
+
 
     </div>
     <div class="col-sm-4">
       <div class="bg-dark-blue-2 p pt+">
 
         <p class="h1 color-white mb+">Your distribution</p>
-          
+
           <canvas id="myChart" width="400" height="400"></canvas>
 
         <div class="color-white mt">
@@ -265,7 +267,7 @@
               </li>
             </ul>
         </div>
-          
+
       </div>
     </div>
   </div>
@@ -291,8 +293,6 @@
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.5.3/bootstrap-slider.min.js"></script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
 
 <script src="javascripts/jquery.FloatLabel.js"></script>
@@ -310,14 +310,95 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.js'></script>
 
 <script src="javascripts/Chart.bundle.min.js"></script>
-    
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.5.3/bootstrap-slider.min.js"></script>
+
+
+<script>
+	jQuery.fn.extend({
+	  toggleText: function (a, b){
+	      var that = this;
+	          if (that.text() != a && that.text() != b){
+	              that.text(a);
+	          }
+	          else
+	          if (that.text() == a){
+	              that.text(b);
+	          }
+	          else
+	          if (that.text() == b){
+	              that.text(a);
+	          }
+	      return this;
+	  }
+	});
+</script>
+
 <script>
 
-$('.slider').slider({
+
+
+$('.slider').bootstrapSlider({
     formatter: function(value) {
       return 'Current value: ' + value;
     }
   });
+
+
+var newDriver = $(
+  "<div class='card card--separator p'>"+
+      "<div class='clearfix'>"+
+      "<i class='ionicons ion-android-close white js-remove-driver pull-left mt'></i>" +
+        "<div class='pull-left ml+'><input type='text' class='form-control' autofocus/></div>"+
+
+        "<div class='pull-right'>"+
+          "<a href='#' class='btn btn-default'>Add driver</a>"+
+        "</div>"+
+      "</div>"+
+
+  "</div>");
+
+$(".js-edit-drivers").click(function(e){
+
+    e.preventDefault();
+    $(this).toggleText('Done', 'Edit');
+    $(".card__delete").toggleClass("hidden");
+    newDriver.remove();
+});
+
+
+
+$(document).on('click', '.js-remove-driver', function(){
+
+    var $that = $(this);
+
+    $that.parent().addClass("animated zoomOut");
+
+    setTimeout(function(){
+      $that.parent().hide();
+    }, 500);
+
+});
+
+   
+
+$(".js-add-driver").click(function(e){
+    e.preventDefault();
+    var newDriver = $(
+    "<div class='card card--separator p'>"+
+        "<i class='ionicons ion-android-close white js-remove-driver pull-left mt'></i>" +
+        "<div class='clearfix'>"+
+          "<div class='pull-left ml+'><input type='text' class='form-control' autofocus/></div>"+
+          "<div class='pull-right'>"+
+            "<a href='#' class='btn btn-default'>Add driver</a>"+
+          "</div>"+
+        "</div>"+
+    "</div>");
+
+    $(this).parent().after(newDriver);
+  });
+
+
   var ctx = document.getElementById("myChart");
   var myChart = new Chart(ctx, {
       type: 'doughnut',
@@ -413,8 +494,12 @@ $('.slider').slider({
       }
   });
 
-  
+
+
+
+
 </script>
-  
+
+
   </body>
 </html>

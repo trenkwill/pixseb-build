@@ -9,12 +9,12 @@
     <title>Pixseb</title>
 
     <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
-    
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker3.standalone.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.css">
-    
+
     <link href="stylesheets/site.css" rel="stylesheet" />
     <script src="javascripts/all.js"></script>
 
@@ -22,7 +22,7 @@
   </head>
 
   <body class="sun-diagram">
-    
+
 
 
       <nav class="navbar navbar-primary bg-faded mb0">
@@ -55,9 +55,9 @@
             <li class="nav-item">
 
               <a class="nav-link clearfix p0 jc-sb at-c dropdown-toggle " data-toggle="dropdown" style="display: flex;" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                  
+
                 <img src="images/face-1.jpg" class="pull-left mr-" width="60" alt="Face 1" />
-              
+
                 <div class="pull-left ml df flex-column">
                   <p class="small color-grey-light">INSA Strasbourg</p> <p class="text-medium">Denis C.</p>
                 </div>
@@ -88,7 +88,7 @@
               </div>
             </li>
           </ul>
-          
+
       </nav>
 
     <nav class="navbar navbar-secondary bg-faded pt-- pb--">
@@ -130,14 +130,14 @@
       <div class="sun-diagram__frame">
         <img src="images/sun-diagram.svg" class="js-panzoom" alt="Sun diagram" />
       </div>
-      
+
     </div>
 
 
     <div class="col-sm-4">
 
       <div class="p+ sun-diagram__column">
-          
+
           <p class="h1 color-white mb">Ranking</p>
 
           <ul class="rankings">
@@ -172,7 +172,7 @@
           <div class="sun-diagram__mini-map js-panzoom-2">
               <div class="rectangle"></div>
 
-              
+
           </div>
       </div>
 
@@ -198,8 +198,6 @@
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.5.3/bootstrap-slider.min.js"></script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
 
 <script src="javascripts/jquery.FloatLabel.js"></script>
@@ -218,23 +216,45 @@
 
 <script src="javascripts/Chart.bundle.min.js"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.5.3/bootstrap-slider.min.js"></script>
+
+
 <script>
-  
+	jQuery.fn.extend({
+	  toggleText: function (a, b){
+	      var that = this;
+	          if (that.text() != a && that.text() != b){
+	              that.text(a);
+	          }
+	          else
+	          if (that.text() == a){
+	              that.text(b);
+	          }
+	          else
+	          if (that.text() == b){
+	              that.text(a);
+	          }
+	      return this;
+	  }
+	});
+</script>
+
+<script>
+
     $(function() {
-      
+
       var $section = $('body');
       $section.find('.js-panzoom').panzoom({
         $zoomIn: $section.find(".js-zoom-in"),
         $zoomOut: $section.find(".js-zoom-out"),
         $zoomRange: $section.find(".js-zoom-range"),
         $reset: $section.find(".js-reset"),
-        startTransform: 'scale(1)',
+        startTransform: 'scale(1) translateY(-150px)',
         increment: 0.1,
         minScale: 1,
-
         contain: 'automatic'
       }).panzoom('zoom');
-      
+
 
       var frameHeight = $(".sun-diagram__frame").height(),
       frameWidth = $(".sun-diagram__frame").width(),
@@ -251,10 +271,11 @@
                 var $section = $('body');
                 $section.find('.js-panzoom').panzoom("pan", -pos.left-150, -pos.top);
             }
-      });      
+      });
     });
 
 </script>
-  
+
+
   </body>
 </html>

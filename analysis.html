@@ -9,12 +9,12 @@
     <title>Pixseb | Analysis</title>
 
     <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
-    
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker3.standalone.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.css">
-    
+
     <link href="stylesheets/site.css" rel="stylesheet" />
     <script src="javascripts/all.js"></script>
 
@@ -22,7 +22,7 @@
   </head>
 
   <body class="analysis">
-    
+
 
 
       <nav class="navbar navbar-primary bg-faded mb0">
@@ -55,9 +55,9 @@
             <li class="nav-item">
 
               <a class="nav-link clearfix p0 jc-sb at-c dropdown-toggle " data-toggle="dropdown" style="display: flex;" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                  
+
                 <img src="images/face-1.jpg" class="pull-left mr-" width="60" alt="Face 1" />
-              
+
                 <div class="pull-left ml df flex-column">
                   <p class="small color-grey-light">INSA Strasbourg</p> <p class="text-medium">Denis C.</p>
                 </div>
@@ -88,7 +88,7 @@
               </div>
             </li>
           </ul>
-          
+
       </nav>
 
     <nav class="navbar navbar-secondary bg-faded pt-- pb--">
@@ -158,7 +158,7 @@
             <label for="search-input"><span>Keywords, patent number</span></label>
             <input type="search" name="" id="input" class="form-control search__input"  title="">
           </div>
-          
+
           <a href="#" class="btn btn-primary search__btn">
             <i class="ionicons ion-ios-search-strong search__icon"></i>
             Search
@@ -171,8 +171,9 @@
 
                 <div class="dropdown-menu p">
                   <ul class="list-unstyled">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item filter" data-filter="card" href="#">All</a></li>
+                    <li><a class="dropdown-item filter" data-filter="international" href="#">International</a></li>
+                    <li><a class="dropdown-item filter" data-filter="national" href="#">National</a></li>
                   </ul>
                 </div>
 
@@ -183,13 +184,14 @@
 
                 <div class="dropdown-menu p">
                   <ul class="list-unstyled">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item filter" data-filter="field-1" href="#">Field 1</a></li>
+                    <li><a class="dropdown-item filter" data-filter="field-2" href="#">Field 2</a></li>
+                    <li><a class="dropdown-item filter" data-filter="field-3" href="#">Field 3</a></li>
                   </ul>
                 </div>
 
             </li>
-            
+
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">All content <i class="ionicons ion-chevron-down ml-"></i></a>
 
@@ -199,19 +201,31 @@
                     <li><a class="dropdown-item" href="#">Action</a></li>
                   </ul>
                 </div>
-                
+
             </li>
 
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Any date <i class="ionicons ion-chevron-down ml-"></i></a>
 
-                <div class="dropdown-menu p">
-                  <ul class="list-unstyled">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                  </ul>
+                <div class="dropdown-menu p" style="width: 260px;">
+                  <div class="row">
+                      <div class="col-xs-12">
+                          <div class="input-group date" data-provide="datepicker">
+                              <input type="text" class="form-control" placeholder="Start date">
+                              <div class="input-group-addon p0">
+                                <i class="ionicons ion-chevron-down"></i>
+                              </div>
+                          </div>
+                          <div class="input-group date" data-provide="datepicker">
+                              <input type="text" class="form-control" placeholder="End date">
+                              <div class="input-group-addon p0">
+                                <i class="ionicons ion-chevron-down"></i>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
                 </div>
-                
+
             </li>
 
             <li class="dropdown">
@@ -223,124 +237,132 @@
                     <li><a class="dropdown-item" href="#">Action</a></li>
                   </ul>
                 </div>
-                
+
             </li>
 
           </ul>
         </div>
-        
+
     </div>
 
   <div class="row df">
-    <div class="col-sm-8 pr0">
-          
-              <div class="df card card--separator pl pr pt- pb-">
-                <div class="card__file" style="background-image: url(images/plan.png);">
-                  <span></span>
-                  <i class="fa fa-file-text-o color-grey fa-2"></i>
-                </div>
-                <div class="p">
-                  
-                  <h3 class="text-bold h4 mb color-blue-dark">Electric power assisted door lock</h3>
-                  
-                  <p class="mb">With the door closed, the bolt-plate (2) notch (9) retains the door-jamb hasp bar (11,13), since the catch (3) prevents the forces opposed by the return spring (14) and compressed peripheral door seal (16) from rotating (F3)…</p>
-                
-                  <div class="clearfix">
-                    <p class="text-uppercase color-grey-light font-14 pull-left">DUPONT PATRICK [FR]; JACQUINET PHILIPPE [FR] <br> + VALEO SECURITE HABITACLE</p>
-                      
-                      <a href="#" class="btn btn--plus pull-right mr js-add-patent">Add</a>
-                  </div>
-                  </div>
-              </div>
-              <div class="df card card--separator pl pr pt- pb-">
-                <div class="card__file" style="background-image: url(images/plan.png);">
-                  <span></span>
-                  <i class="fa fa-file-text-o color-grey fa-2"></i>
-                </div>
-                <div class="p">
-                  
-                  <h3 class="text-bold h4 mb color-blue-dark">Electric power assisted door lock</h3>
-                  
-                  <p class="mb">With the door closed, the bolt-plate (2) notch (9) retains the door-jamb hasp bar (11,13), since the catch (3) prevents the forces opposed by the return spring (14) and compressed peripheral door seal (16) from rotating (F3)…</p>
-                
-                  <div class="clearfix">
-                    <p class="text-uppercase color-grey-light font-14 pull-left">DUPONT PATRICK [FR]; JACQUINET PHILIPPE [FR] <br> + VALEO SECURITE HABITACLE</p>
-                      
-                      <a href="#" class="btn btn--plus pull-right mr js-add-patent">Add</a>
-                  </div>
-                  </div>
-              </div>
-              <div class="df card card--separator pl pr pt- pb-">
-                <div class="card__file" style="background-image: url(images/plan.png);">
-                  <span></span>
-                  <i class="fa fa-file-text-o color-grey fa-2"></i>
-                </div>
-                <div class="p">
-                  
-                  <h3 class="text-bold h4 mb color-blue-dark">Electric power assisted door lock</h3>
-                  
-                  <p class="mb">With the door closed, the bolt-plate (2) notch (9) retains the door-jamb hasp bar (11,13), since the catch (3) prevents the forces opposed by the return spring (14) and compressed peripheral door seal (16) from rotating (F3)…</p>
-                
-                  <div class="clearfix">
-                    <p class="text-uppercase color-grey-light font-14 pull-left">DUPONT PATRICK [FR]; JACQUINET PHILIPPE [FR] <br> + VALEO SECURITE HABITACLE</p>
-                      
-                      <a href="#" class="btn btn--plus pull-right mr js-add-patent">Add</a>
-                  </div>
-                  </div>
-              </div>
+    <div class="col-sm-8 pr0 cards">
 
-              <div class="df card card--separator pl pr pt- pb-">
+
+              <div class="df card card--separator pl pr pt- pb- international field-1">
                 <div class="card__file">
                   <span></span>
                   <i class="fa fa-file-text-o color-grey fa-2"></i>
                 </div>
                 <div class="p">
-                  
-                  <h3 class="text-bold h4 mb color-blue-dark">Electric power assisted door lock</h3>
-                  
+
+                  <h3 class="text-bold h4 mb color-blue-dark"><a href="#" data-toggle="modal" data-target="#open-doc">Positive retraction latch locking dog for a rotating control device</a></h3>
+
                   <p class="mb">With the door closed, the bolt-plate (2) notch (9) retains the door-jamb hasp bar (11,13), since the catch (3) prevents the forces opposed by the return spring (14) and compressed peripheral door seal (16) from rotating (F3)…</p>
-                
+
                   <div class="clearfix">
                     <p class="text-uppercase color-grey-light font-14 pull-left">DUPONT PATRICK [FR]; JACQUINET PHILIPPE [FR] <br> + VALEO SECURITE HABITACLE</p>
-                      
+
                       <a href="#" class="btn btn--plus pull-right mr js-add-patent">Add</a>
                   </div>
 
                   </div>
               </div>
-              <div class="df card card--separator pl pr pt- pb-">
+
+              <div class="df card card--separator pl pr pt- pb- international field-1">
                 <div class="card__file">
                   <span></span>
                   <i class="fa fa-file-text-o color-grey fa-2"></i>
                 </div>
                 <div class="p">
-                  
-                  <h3 class="text-bold h4 mb color-blue-dark">Electric power assisted door lock</h3>
-                  
+
+                  <h3 class="text-bold h4 mb color-blue-dark"><a href="#" data-toggle="modal" data-target="#open-doc">Locking arrangement has base on which the rotary catch bolt is …</a></h3>
+
                   <p class="mb">With the door closed, the bolt-plate (2) notch (9) retains the door-jamb hasp bar (11,13), since the catch (3) prevents the forces opposed by the return spring (14) and compressed peripheral door seal (16) from rotating (F3)…</p>
-                
+
                   <div class="clearfix">
                     <p class="text-uppercase color-grey-light font-14 pull-left">DUPONT PATRICK [FR]; JACQUINET PHILIPPE [FR] <br> + VALEO SECURITE HABITACLE</p>
-                      
+
                       <a href="#" class="btn btn--plus pull-right mr js-add-patent">Add</a>
                   </div>
 
                   </div>
               </div>
-              <div class="df card card--separator pl pr pt- pb-">
+
+              <div class="df card card--separator pl pr pt- pb- international field-1">
                 <div class="card__file">
                   <span></span>
                   <i class="fa fa-file-text-o color-grey fa-2"></i>
                 </div>
                 <div class="p">
-                  
-                  <h3 class="text-bold h4 mb color-blue-dark">Electric power assisted door lock</h3>
-                  
+
+                  <h3 class="text-bold h4 mb color-blue-dark"><a href="#" data-toggle="modal" data-target="#open-doc">Electric power assisted door lock</a></h3>
+
                   <p class="mb">With the door closed, the bolt-plate (2) notch (9) retains the door-jamb hasp bar (11,13), since the catch (3) prevents the forces opposed by the return spring (14) and compressed peripheral door seal (16) from rotating (F3)…</p>
-                
+
                   <div class="clearfix">
                     <p class="text-uppercase color-grey-light font-14 pull-left">DUPONT PATRICK [FR]; JACQUINET PHILIPPE [FR] <br> + VALEO SECURITE HABITACLE</p>
-                      
+
+                      <a href="#" class="btn btn--plus pull-right mr js-add-patent">Add</a>
+                  </div>
+
+                  </div>
+              </div>
+
+              <div class="df card card--separator pl pr pt- pb- international field-1">
+                <div class="card__file">
+                  <span></span>
+                  <i class="fa fa-file-text-o color-grey fa-2"></i>
+                </div>
+                <div class="p">
+
+                  <h3 class="text-bold h4 mb color-blue-dark"><a href="#" data-toggle="modal" data-target="#open-doc">Positive retraction latch locking dog for a rotating control device</a></h3>
+
+                  <p class="mb">With the door closed, the bolt-plate (2) notch (9) retains the door-jamb hasp bar (11,13), since the catch (3) prevents the forces opposed by the return spring (14) and compressed peripheral door seal (16) from rotating (F3)…</p>
+
+                  <div class="clearfix">
+                    <p class="text-uppercase color-grey-light font-14 pull-left">DUPONT PATRICK [FR]; JACQUINET PHILIPPE [FR] <br> + VALEO SECURITE HABITACLE</p>
+
+                      <a href="#" class="btn btn--plus pull-right mr js-add-patent">Add</a>
+                  </div>
+
+                  </div>
+              </div>
+
+              <div class="df card card--separator pl pr pt- pb- international field-1">
+                <div class="card__file">
+                  <span></span>
+                  <i class="fa fa-file-text-o color-grey fa-2"></i>
+                </div>
+                <div class="p">
+
+                  <h3 class="text-bold h4 mb color-blue-dark"><a href="#" data-toggle="modal" data-target="#open-doc">Locking arrangement has base on which the rotary catch bolt is …</a></h3>
+
+                  <p class="mb">With the door closed, the bolt-plate (2) notch (9) retains the door-jamb hasp bar (11,13), since the catch (3) prevents the forces opposed by the return spring (14) and compressed peripheral door seal (16) from rotating (F3)…</p>
+
+                  <div class="clearfix">
+                    <p class="text-uppercase color-grey-light font-14 pull-left">DUPONT PATRICK [FR]; JACQUINET PHILIPPE [FR] <br> + VALEO SECURITE HABITACLE</p>
+
+                      <a href="#" class="btn btn--plus pull-right mr js-add-patent">Add</a>
+                  </div>
+
+                  </div>
+              </div>
+
+              <div class="df card card--separator pl pr pt- pb- international field-1">
+                <div class="card__file">
+                  <span></span>
+                  <i class="fa fa-file-text-o color-grey fa-2"></i>
+                </div>
+                <div class="p">
+
+                  <h3 class="text-bold h4 mb color-blue-dark"><a href="#" data-toggle="modal" data-target="#open-doc">Electric power assisted door lock</a></h3>
+
+                  <p class="mb">With the door closed, the bolt-plate (2) notch (9) retains the door-jamb hasp bar (11,13), since the catch (3) prevents the forces opposed by the return spring (14) and compressed peripheral door seal (16) from rotating (F3)…</p>
+
+                  <div class="clearfix">
+                    <p class="text-uppercase color-grey-light font-14 pull-left">DUPONT PATRICK [FR]; JACQUINET PHILIPPE [FR] <br> + VALEO SECURITE HABITACLE</p>
+
                       <a href="#" class="btn btn--plus pull-right mr js-add-patent">Add</a>
                   </div>
 
@@ -349,7 +371,7 @@
     </div>
     <div class="col-sm-4 df pl0">
       <div class="bg-dark-blue-2">
-          
+
          <div class="p">
 
 
@@ -366,42 +388,82 @@
                  optimal selection</p>
              </div>
             </div>
-           
-           
+
+
            <h2 class="h1 color-green text-condensed mb">27 Selected patents</h2>
          </div>
 
          <div class="patents">
              <div class="patent">
-           
+
                  <i class="fa fa-file-text-o fa-2 pull-left mr"></i>
-                 <p>Positive retraction latch locking dog for a rotating control …</p>
+                 <p>Positive retraction latch locking dog for a rotating control device</p>
                  <i class="ionicons ion-close"></i>
-           
+
              </div>
              <div class="patent">
-           
+
                  <i class="fa fa-file-text-o fa-2 pull-left mr"></i>
-                 <p>Positive retraction latch locking dog for a rotating control …</p>
+                 <p>Locking arrangement has base on which the rotary catch bolt is …</p>
                  <i class="ionicons ion-close"></i>
-           
+
              </div>
              <div class="patent">
-           
+
                  <i class="fa fa-file-text-o fa-2 pull-left mr"></i>
-                 <p>Positive retraction latch locking dog for a rotating control …</p>
+                 <p>Electric power assisted door lock</p>
                  <i class="ionicons ion-close"></i>
-           
+
              </div>
              <div class="patent">
-           
+
                  <i class="fa fa-file-text-o fa-2 pull-left mr"></i>
-                 <p>Positive retraction latch locking dog for a rotating control …</p>
+                 <p>Positive retraction latch locking dog for a rotating control device</p>
                  <i class="ionicons ion-close"></i>
-           
+
+             </div>
+             <div class="patent">
+
+                 <i class="fa fa-file-text-o fa-2 pull-left mr"></i>
+                 <p>Locking arrangement has base on which the rotary catch bolt is …</p>
+                 <i class="ionicons ion-close"></i>
+
+             </div>
+             <div class="patent">
+
+                 <i class="fa fa-file-text-o fa-2 pull-left mr"></i>
+                 <p>Electric power assisted door lock</p>
+                 <i class="ionicons ion-close"></i>
+
              </div>
           </div>
 
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="open-doc">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="p">
+            <div class="row">
+              <div class="col-sm-4">
+                <img src="images/plan.png" width="100%" alt="Plan" />
+                <a href="#" class="btn btn-primary">Download</a>
+              </div>
+              <div class="col-sm-8">
+                <h4 class="mb">Positive retraction latch locking dog for a rotating control device</h4>
+                <p class="mb">A latch (116) and method for use is provided for latching an item of oilfield equipment (104). The latch has a housing (114) containing a latch member (116), and the latch member is movable between a radially engaged position in which it is engaged with the item of oilfield equipment, and a radially retracted position in which it is disengaged from the item of oilfield equipment. An actuator is configured to drive the latch member into the radially engaged position. Further, the actuator (118) is configured to drive the latch member toward the radially retracted position.</p>
+                <p class="mb">WEATHERFORD/LAMB, INC / RIOS, Aristeo III / CHAMBERS, James, W. / WAGONER, Danny, W / HARRALL, Simon, J</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="mr+">
+            <a href="#" class="btn btn--plus pull-right mr+ js-add-patent" data-dismiss="modal">Add</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -427,8 +489,6 @@
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.5.3/bootstrap-slider.min.js"></script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
 
 <script src="javascripts/jquery.FloatLabel.js"></script>
@@ -447,13 +507,52 @@
 
 <script src="javascripts/Chart.bundle.min.js"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.5.3/bootstrap-slider.min.js"></script>
+
+
+<script>
+	jQuery.fn.extend({
+	  toggleText: function (a, b){
+	      var that = this;
+	          if (that.text() != a && that.text() != b){
+	              that.text(a);
+	          }
+	          else
+	          if (that.text() == a){
+	              that.text(b);
+	          }
+	          else
+	          if (that.text() == b){
+	              that.text(a);
+	          }
+	      return this;
+	  }
+	});
+</script>
+
+<script src="javascripts/isotope.pkgd.min.js"></script>
+
 <script>
 
-  $("#patents-meter").myfunc({
-    divFact:10,
-    eventListenerType:'keyup',
-    initDeg : 25
+
+$('.datepicker').datepicker({
+  orientation: 'right'
+});
+
+  var $cards = $('.cards').isotope({
+    // options
+    itemSelector: '.card',
+    layoutMode: 'fitRows'
   });
+
+
+
+ $('.filter').click(function(){
+      var filterValue = $( this ).attr('data-filter');
+      console.log(filterValue);
+      $cards.isotope({ filter: '.'+filterValue });
+  });
+
 
   function addPatent() {
     var i = 25;
@@ -472,11 +571,12 @@
 
   addPatent();
 
-  // this enables the inputs to have the labels in it, 
+  // this enables the inputs to have the labels in it,
   // and when clicked animates the label to the top
   $(".js-float-label-wrapper").FloatLabel();
-  
+
 </script>
-  
+
+
   </body>
 </html>

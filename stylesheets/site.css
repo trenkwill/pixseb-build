@@ -6476,7 +6476,7 @@ legend {
   .card:hover .card__img__hover {
     display: block;
     display: flex; }
-  .card:nth-child(2) .card__handles .js-move-up {
+  .card:nth-child(1) .card__handles .js-move-up {
     display: none; }
   .card:last-child .card__handles .js-move-down {
     display: none; }
@@ -6586,6 +6586,21 @@ legend {
     border-bottom: solid 1px #DEE3E6;
     box-shadow: none;
     outline: none; }
+
+.form-control-2 {
+  display: block;
+  width: 100%;
+  height: 36px;
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #555555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
 
 .input-group-addon {
   background: none;
@@ -6786,6 +6801,13 @@ legend {
     top: 40px;
     right: 40px;
     width: 336px; }
+  .contradictions__count {
+    position: absolute;
+    right: -30px;
+    top: 10px;
+    background: #AEB9BF;
+    padding: 10px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2); }
 
 .patent {
   color: white;
@@ -6870,6 +6892,9 @@ legend {
       background: #EB2B5E;
       color: #fff;
       border: solid 1px #EB2B5E; }
+    .mini-card--pink .mini-card__delete {
+      left: -21px;
+      background: #EB2B5E; }
   .mini-card--green {
     border: solid 1px #a1E3DF;
     border-left: solid 3px #00A297; }
@@ -6880,9 +6905,26 @@ legend {
       background: #00A297;
       color: #fff;
       border: solid 1px #00A297; }
+    .mini-card--green .mini-card__delete {
+      right: -21px;
+      background: #00A297; }
   .mini-card__content {
     display: flex;
+    flex-grow: 1;
     align-items: center; }
+  .mini-card__delete {
+    position: absolute;
+    color: #fff;
+    display: block;
+    top: 50%;
+    width: 36px;
+    height: 36px;
+    line-height: 23px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 8px;
+    margin-top: -18px;
+    cursor: pointer; }
   .mini-card__anchor {
     position: absolute;
     color: #fff;
@@ -6912,6 +6954,8 @@ legend {
       border: solid 4px #fff;
       border-radius: 50%;
       box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.35); }
+  .mini-card textarea {
+    height: 90px; }
 
 .slider .slider-track {
   height: 2px !important;
@@ -7236,6 +7280,8 @@ legend {
   height: 100vh;
   width: 100%;
   background: #17212A; }
+  .sun-diagram__frame img {
+    transform-origin: 100px 300px; }
 .sun-diagram__zoom-in, .sun-diagram__zoom-out, .sun-diagram__reset {
   display: inline-block;
   text-align: center;

@@ -358,7 +358,7 @@
                         <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
                         <use fill="url(#radialGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
                     </g>
-                    <text id="SYSTÈME-IDÉAL" font-family="RobotoCondensed-Bold, Roboto Condensed" font-size="18" font-style="condensed" font-weight="bold" fill="#C8ECFF">
+                    <text id="SYSTÈME-IDÉAL" font-family="Roboto Bold, Helvetica, Roboto Condensed" font-size="18" font-style="condensed" font-weight="bold" fill="#C8ECFF">
                         <tspan x="0" y="17">SYSTÈME IDÉAL</tspan>
                     </text>
                     <path d="M54,45.5 L54,19.9803997" id="Line" stroke="url(#linearGradient-4)" stroke-width="2" stroke-linecap="square" opacity="0.84870569"></path>
@@ -388,81 +388,81 @@
                 <g id="Technologies" transform="translate(542.000000, 711.000000)" fill="#1673BC">
                     <g id="Group-35" transform="translate(378.000000, 488.000000)">
                         <rect id="Rectangle-6" fill-opacity="0.2" x="0" y="0" width="106" height="24" rx="12"></rect>
-                        <text id="G10-Pre-cinching" font-family="RobotoCondensed-Regular, Roboto Condensed" font-size="14" font-style="condensed" font-weight="normal">
+                        <text id="G10-Pre-cinching" font-family="Roboto, Roboto Condensed, Helvetica" font-size="14" font-style="condensed" font-weight="normal">
                             <tspan x="6" y="17">G10 Pre-cinching</tspan>
                         </text>
                     </g>
                     <g id="Group-34" transform="translate(254.000000, 392.000000)">
                         <rect id="Rectangle-6-Copy-4" fill-opacity="0.2" x="0" y="0" width="106" height="36" rx="18"></rect>
-                        <text id="G3-Pawl-is-over-cent" font-family="RobotoCondensed-Regular, Roboto Condensed" font-size="14" font-style="condensed" font-weight="normal" line-spacing="14">
+                        <text id="G3-Pawl-is-over-cent" font-family="Roboto, Roboto Condensed, Helvetica" font-size="14" font-style="condensed" font-weight="normal" line-spacing="14">
                             <tspan x="12" y="17">G3 Pawl is over</tspan>
                             <tspan x="12" y="31">centre toggle</tspan>
                         </text>
                     </g>
                     <g id="Group-36" transform="translate(514.000000, 472.000000)">
                         <rect id="Rectangle-6-Copy" fill-opacity="0.2" x="0" y="0" width="106" height="36" rx="18"></rect>
-                        <text id="G2-Over-centre-Toggl" font-family="RobotoCondensed-Regular, Roboto Condensed" font-size="14" font-style="condensed" font-weight="normal" line-spacing="14">
+                        <text id="G2-Over-centre-Toggl" font-family="Roboto, Roboto Condensed, Helvetica" font-size="14" font-style="condensed" font-weight="normal" line-spacing="14">
                             <tspan x="13" y="17">G2 Over centre</tspan>
                             <tspan x="13" y="31">Toggle</tspan>
                         </text>
                     </g>
                     <g id="Group-37" transform="translate(596.000000, 351.000000)">
                         <rect id="Rectangle-6-Copy-2" fill-opacity="0.2" x="0" y="0" width="94" height="36" rx="18"></rect>
-                        <text id="G1-Pawl-on-excentric" font-family="RobotoCondensed-Regular, Roboto Condensed" font-size="14" font-style="condensed" font-weight="normal" line-spacing="14">
+                        <text id="G1-Pawl-on-excentric" font-family="Roboto, Roboto Condensed, Helvetica" font-size="14" font-style="condensed" font-weight="normal" line-spacing="14">
                             <tspan x="15" y="17">G1 Pawl on</tspan>
                             <tspan x="15" y="31">excentric</tspan>
                         </text>
                     </g>
                     <g id="Group-33" transform="translate(97.000000, 476.000000)">
                         <rect id="Rectangle-6-Copy-5" fill-opacity="0.2" x="0" y="0" width="106" height="36" rx="18"></rect>
-                        <text id="G4-Store-energy-in-s" font-family="RobotoCondensed-Regular, Roboto Condensed" font-size="14" font-style="condensed" font-weight="normal" line-spacing="14">
+                        <text id="G4-Store-energy-in-s" font-family="Roboto, Roboto Condensed, Helvetica" font-size="14" font-style="condensed" font-weight="normal" line-spacing="14">
                             <tspan x="10" y="17">G4 Store energy</tspan>
                             <tspan x="10" y="31">in spring</tspan>
                         </text>
                     </g>
                     <g id="Group-31" transform="translate(1.000000, 247.000000)">
                         <rect id="Rectangle-6-Copy-7" fill-opacity="0.2" x="0" y="0" width="85" height="36" rx="18"></rect>
-                        <text id="G6-Rowlling-contact" font-family="RobotoCondensed-Regular, Roboto Condensed" font-size="14" font-style="condensed" font-weight="normal" line-spacing="14">
+                        <text id="G6-Rowlling-contact" font-family="Roboto, Roboto Condensed, Helvetica" font-size="14" font-style="condensed" font-weight="normal" line-spacing="14">
                             <tspan x="9" y="17">G6 Rowlling</tspan>
                             <tspan x="9" y="31">contact</tspan>
                         </text>
                     </g>
                     <g id="Group-30" transform="translate(0.000000, 105.000000)">
                         <rect id="Rectangle-6-Copy-8" fill-opacity="0.2" x="0" y="0" width="118" height="36" rx="18"></rect>
-                        <text id="G7.1-Clawlinked-to-p" font-family="RobotoCondensed-Regular, Roboto Condensed" font-size="14" font-style="condensed" font-weight="normal" line-spacing="14">
+                        <text id="G7.1-Clawlinked-to-p" font-family="Roboto, Roboto Condensed, Helvetica" font-size="14" font-style="condensed" font-weight="normal" line-spacing="14">
                             <tspan x="12" y="17">G7.1 Clawlinked </tspan>
                             <tspan x="12" y="31">to pawl by toggle</tspan>
                         </text>
                     </g>
                     <g id="Group-32" transform="translate(6.000000, 423.000000)">
                         <rect id="Rectangle-6-Copy-6" fill-opacity="0.2" x="0" y="0" width="95" height="36" rx="18"></rect>
-                        <text id="G2-Over-centre-Toggl-Copy-7" font-family="RobotoCondensed-Regular, Roboto Condensed" font-size="14" font-style="condensed" font-weight="normal" line-spacing="14">
+                        <text id="G2-Over-centre-Toggl-Copy-7" font-family="Roboto, Roboto Condensed, Helvetica" font-size="14" font-style="condensed" font-weight="normal" line-spacing="14">
                             <tspan x="10" y="17">G2 Over</tspan>
                             <tspan x="10" y="31">centre Toggle</tspan>
                         </text>
                     </g>
                     <g id="Group-39" transform="translate(608.000000, 112.000000)">
                         <rect id="Rectangle-6-Copy-9" fill-opacity="0.2" x="0" y="0" width="85" height="24" rx="12"></rect>
-                        <text id="G5-2nd-pawl" font-family="RobotoCondensed-Regular, Roboto Condensed" font-size="14" font-style="condensed" font-weight="normal">
+                        <text id="G5-2nd-pawl" font-family="Roboto, Roboto Condensed, Helvetica" font-size="14" font-style="condensed" font-weight="normal">
                             <tspan x="8" y="18">G5 2nd pawl</tspan>
                         </text>
                     </g>
                     <g id="Group-40" transform="translate(605.000000, 4.000000)">
                         <rect id="Rectangle-6-Copy-10" fill-opacity="0.2" x="0" y="0" width="94" height="24" rx="12"></rect>
-                        <text id="G9-2-way-pawl" font-family="RobotoCondensed-Regular, Roboto Condensed" font-size="14" font-style="condensed" font-weight="normal" line-spacing="14">
+                        <text id="G9-2-way-pawl" font-family="Roboto, Roboto Condensed, Helvetica" font-size="14" font-style="condensed" font-weight="normal" line-spacing="14">
                             <tspan x="6" y="18">G9 2 way pawl</tspan>
                         </text>
                     </g>
                     <g id="Group-38" transform="translate(588.000000, 201.000000)">
                         <rect id="Rectangle-6-Copy-3" fill-opacity="0.2" x="0" y="0" width="132" height="36" rx="18"></rect>
-                        <text id="G7-2&amp;3-Pawl-is-under" font-family="RobotoCondensed-Regular, Roboto Condensed" font-size="14" font-style="condensed" font-weight="normal" line-spacing="14">
+                        <text id="G7-2&amp;3-Pawl-is-under" font-family="Roboto, Roboto Condensed, Helvetica" font-size="14" font-style="condensed" font-weight="normal" line-spacing="14">
                             <tspan x="13" y="17">G7 2&amp;3 Pawl is</tspan>
                             <tspan x="13" y="31">under centre toggle</tspan>
                         </text>
                     </g>
                     <g id="Group-29" transform="translate(2.000000, 0.000000)">
                         <rect id="Rectangle-6-Copy-11" fill-opacity="0.2" x="0" y="0" width="129" height="36" rx="18"></rect>
-                        <text id="G8-LER-Pawl-on-excen" font-family="RobotoCondensed-Regular, Roboto Condensed" font-size="14" font-style="condensed" font-weight="normal" line-spacing="14">
+                        <text id="G8-LER-Pawl-on-excen" font-family="Roboto, Roboto Condensed, Helvetica" font-size="14" font-style="condensed" font-weight="normal" line-spacing="14">
                             <tspan x="9" y="17">G8 LER Pawl on</tspan>
                             <tspan x="9" y="31">excentric + 2nd pawl</tspan>
                         </text>
@@ -550,19 +550,19 @@
                 <g id="TC" transform="translate(605.000000, 661.000000)">
                     <g id="Group-19" transform="translate(337.000000, 320.000000)">
                         <use id="Rectangle-2-Copy-2" stroke="#FFA327" mask="url(#mask-15)" stroke-width="4" fill="#17212A" xlink:href="#path-14"></use>
-                        <text id="TC-4" font-family="RobotoCondensed-Regular, Roboto Condensed" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
+                        <text id="TC-4" font-family="Roboto, Roboto Condensed, Helvetica" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
                             <tspan x="8" y="16">TC 4</tspan>
                         </text>
                     </g>
                     <g id="Group-25" transform="translate(40.000000, 364.000000)">
                         <use id="Rectangle-2-Copy-9" stroke="#FFA327" mask="url(#mask-17)" stroke-width="4" fill="#17212A" xlink:href="#path-16"></use>
-                        <text id="TC-4" font-family="RobotoCondensed-Regular, Roboto Condensed" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
+                        <text id="TC-4" font-family="Roboto, Roboto Condensed, Helvetica" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
                             <tspan x="8" y="16">TC 4</tspan>
                         </text>
                     </g>
                     <g id="Group-11" transform="translate(336.000000, 67.000000)">
                         <use id="Rectangle-2-Copy-3" stroke="#FFA327" mask="url(#mask-19)" stroke-width="4" fill="#17212A" xlink:href="#path-18"></use>
-                        <text id="TC-4" font-family="RobotoCondensed-Regular, Roboto Condensed" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
+                        <text id="TC-4" font-family="Roboto, Roboto Condensed, Helvetica" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
                             <tspan x="8" y="16">TC 4</tspan>
                         </text>
                     </g>
@@ -571,7 +571,7 @@
                             <use fill="black" fill-opacity="1" filter="url(#filter-21)" xlink:href="#path-20"></use>
                             <use stroke="#ED3A5E" mask="url(#mask-22)" stroke-width="4" fill="#17212A" fill-rule="evenodd" xlink:href="#path-20"></use>
                         </g>
-                        <text id="TC-3" font-family="RobotoCondensed-Regular, Roboto Condensed" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
+                        <text id="TC-3" font-family="Roboto, Roboto Condensed, Helvetica" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
                             <tspan x="8" y="16">TC 3</tspan>
                         </text>
                     </g>
@@ -580,7 +580,7 @@
                             <use fill="black" fill-opacity="1" filter="url(#filter-24)" xlink:href="#path-23"></use>
                             <use stroke="#ED3A5E" mask="url(#mask-25)" stroke-width="4" fill="#17212A" fill-rule="evenodd" xlink:href="#path-23"></use>
                         </g>
-                        <text id="TC-3" font-family="RobotoCondensed-Regular, Roboto Condensed" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
+                        <text id="TC-3" font-family="Roboto, Roboto Condensed, Helvetica" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
                             <tspan x="8" y="16">TC 3</tspan>
                         </text>
                     </g>
@@ -589,7 +589,7 @@
                             <use fill="black" fill-opacity="1" filter="url(#filter-27)" xlink:href="#path-26"></use>
                             <use stroke="#ED3A5E" mask="url(#mask-28)" stroke-width="4" fill="#17212A" fill-rule="evenodd" xlink:href="#path-26"></use>
                         </g>
-                        <text id="TC-3" font-family="RobotoCondensed-Regular, Roboto Condensed" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
+                        <text id="TC-3" font-family="Roboto, Roboto Condensed, Helvetica" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
                             <tspan x="8" y="16">TC 3</tspan>
                         </text>
                     </g>
@@ -598,7 +598,7 @@
                             <use fill="black" fill-opacity="1" filter="url(#filter-30)" xlink:href="#path-29"></use>
                             <use stroke="#ED3A5E" mask="url(#mask-31)" stroke-width="4" fill="#17212A" fill-rule="evenodd" xlink:href="#path-29"></use>
                         </g>
-                        <text id="TC-3" font-family="RobotoCondensed-Regular, Roboto Condensed" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
+                        <text id="TC-3" font-family="Roboto, Roboto Condensed, Helvetica" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
                             <tspan x="8" y="16">TC 3</tspan>
                         </text>
                     </g>
@@ -607,7 +607,7 @@
                             <use fill="black" fill-opacity="1" filter="url(#filter-33)" xlink:href="#path-32"></use>
                             <use stroke="#85C900" mask="url(#mask-34)" stroke-width="4" fill="#17212A" fill-rule="evenodd" xlink:href="#path-32"></use>
                         </g>
-                        <text id="TC-1" font-family="RobotoCondensed-Regular, Roboto Condensed" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
+                        <text id="TC-1" font-family="Roboto, Roboto Condensed, Helvetica" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
                             <tspan x="8" y="16">TC 1</tspan>
                         </text>
                     </g>
@@ -616,7 +616,7 @@
                             <use fill="black" fill-opacity="1" filter="url(#filter-36)" xlink:href="#path-35"></use>
                             <use stroke="#85C900" mask="url(#mask-37)" stroke-width="4" fill="#17212A" fill-rule="evenodd" xlink:href="#path-35"></use>
                         </g>
-                        <text id="TC-1" font-family="RobotoCondensed-Regular, Roboto Condensed" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
+                        <text id="TC-1" font-family="Roboto, Roboto Condensed, Helvetica" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
                             <tspan x="8" y="16">TC 1</tspan>
                         </text>
                     </g>
@@ -625,7 +625,7 @@
                             <use fill="black" fill-opacity="1" filter="url(#filter-39)" xlink:href="#path-38"></use>
                             <use stroke="#85C900" mask="url(#mask-40)" stroke-width="4" fill="#17212A" fill-rule="evenodd" xlink:href="#path-38"></use>
                         </g>
-                        <text id="TC-1" font-family="RobotoCondensed-Regular, Roboto Condensed" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
+                        <text id="TC-1" font-family="Roboto, Roboto Condensed, Helvetica" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
                             <tspan x="8" y="16">TC 1</tspan>
                         </text>
                     </g>
@@ -634,10 +634,10 @@
                             <use fill="black" fill-opacity="1" filter="url(#filter-42)" xlink:href="#path-41"></use>
                             <use stroke="#86CA00" mask="url(#mask-43)" stroke-width="4" fill="#17212A" fill-rule="evenodd" xlink:href="#path-41"></use>
                         </g>
-                        <text id="TC-1" font-family="RobotoCondensed-Regular, Roboto Condensed" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
+                        <text id="TC-1" font-family="Roboto, Roboto Condensed, Helvetica" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
                             <tspan x="17" y="34">TC 1</tspan>
                         </text>
-                        <text id="+2-copy" font-family="RobotoCondensed-Bold, Roboto Condensed" font-size="14" font-style="condensed" font-weight="bold" fill="#FFFFFF">
+                        <text id="+2-copy" font-family="Roboto Bold, Helvetica, Roboto Condensed" font-size="14" font-style="condensed" font-weight="bold" fill="#FFFFFF">
                             <tspan x="0" y="13">+2</tspan>
                         </text>
                     </g>
@@ -646,7 +646,7 @@
                             <use fill="black" fill-opacity="1" filter="url(#filter-45)" xlink:href="#path-44"></use>
                             <use stroke="#5C1895" mask="url(#mask-46)" stroke-width="4" fill="#17212A" fill-rule="evenodd" xlink:href="#path-44"></use>
                         </g>
-                        <text id="TC-5" font-family="RobotoCondensed-Regular, Roboto Condensed" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
+                        <text id="TC-5" font-family="Roboto, Roboto Condensed, Helvetica" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
                             <tspan x="8" y="16">TC 5</tspan>
                         </text>
                     </g>
@@ -655,7 +655,7 @@
                             <use fill="black" fill-opacity="1" filter="url(#filter-48)" xlink:href="#path-47"></use>
                             <use stroke="#5C1895" mask="url(#mask-49)" stroke-width="4" fill="#17212A" fill-rule="evenodd" xlink:href="#path-47"></use>
                         </g>
-                        <text id="TC-5" font-family="RobotoCondensed-Regular, Roboto Condensed" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
+                        <text id="TC-5" font-family="Roboto, Roboto Condensed, Helvetica" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
                             <tspan x="8" y="16">TC 5</tspan>
                         </text>
                     </g>
@@ -664,7 +664,7 @@
                             <use fill="black" fill-opacity="1" filter="url(#filter-51)" xlink:href="#path-50"></use>
                             <use stroke="#5C1895" mask="url(#mask-52)" stroke-width="4" fill="#17212A" fill-rule="evenodd" xlink:href="#path-50"></use>
                         </g>
-                        <text id="TC-5" font-family="RobotoCondensed-Regular, Roboto Condensed" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
+                        <text id="TC-5" font-family="Roboto, Roboto Condensed, Helvetica" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
                             <tspan x="8" y="16">TC 5</tspan>
                         </text>
                     </g>
@@ -673,10 +673,10 @@
                             <use fill="black" fill-opacity="1" filter="url(#filter-54)" xlink:href="#path-53"></use>
                             <use stroke="#00A297" mask="url(#mask-55)" stroke-width="4" fill="#17212A" fill-rule="evenodd" xlink:href="#path-53"></use>
                         </g>
-                        <text id="+2" font-family="RobotoCondensed-Bold, Roboto Condensed" font-size="14" font-style="condensed" font-weight="bold" fill="#FFFFFF">
+                        <text id="+2" font-family="Roboto Bold, Helvetica, Roboto Condensed" font-size="14" font-style="condensed" font-weight="bold" fill="#FFFFFF">
                             <tspan x="0" y="13">+2</tspan>
                         </text>
-                        <text id="TC-2" font-family="RobotoCondensed-Regular, Roboto Condensed" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
+                        <text id="TC-2" font-family="Roboto, Roboto Condensed, Helvetica" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
                             <tspan x="9" y="33">TC 2</tspan>
                         </text>
                     </g>
@@ -685,7 +685,7 @@
                             <use fill="black" fill-opacity="1" filter="url(#filter-57)" xlink:href="#path-56"></use>
                             <use stroke="#00A297" mask="url(#mask-58)" stroke-width="4" fill="#17212A" fill-rule="evenodd" xlink:href="#path-56"></use>
                         </g>
-                        <text id="TC-2" font-family="RobotoCondensed-Regular, Roboto Condensed" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
+                        <text id="TC-2" font-family="Roboto, Roboto Condensed, Helvetica" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
                             <tspan x="8" y="16">TC 2</tspan>
                         </text>
                     </g>
@@ -694,7 +694,7 @@
                             <use fill="black" fill-opacity="1" filter="url(#filter-60)" xlink:href="#path-59"></use>
                             <use stroke="#85C900" mask="url(#mask-61)" stroke-width="4" fill="#17212A" fill-rule="evenodd" xlink:href="#path-59"></use>
                         </g>
-                        <text id="TC-1" font-family="RobotoCondensed-Regular, Roboto Condensed" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
+                        <text id="TC-1" font-family="Roboto, Roboto Condensed, Helvetica" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
                             <tspan x="8" y="16">TC 1</tspan>
                         </text>
                     </g>
@@ -703,7 +703,7 @@
                             <use fill="black" fill-opacity="1" filter="url(#filter-63)" xlink:href="#path-62"></use>
                             <use stroke="#00A297" mask="url(#mask-64)" stroke-width="4" fill="#17212A" fill-rule="evenodd" xlink:href="#path-62"></use>
                         </g>
-                        <text id="TC-2" font-family="RobotoCondensed-Regular, Roboto Condensed" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
+                        <text id="TC-2" font-family="Roboto, Roboto Condensed, Helvetica" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
                             <tspan x="8" y="16">TC 2</tspan>
                         </text>
                     </g>
@@ -712,7 +712,7 @@
                             <use fill="black" fill-opacity="1" filter="url(#filter-66)" xlink:href="#path-65"></use>
                             <use stroke="#00A297" mask="url(#mask-67)" stroke-width="4" fill="#17212A" fill-rule="evenodd" xlink:href="#path-65"></use>
                         </g>
-                        <text id="TC-2" font-family="RobotoCondensed-Regular, Roboto Condensed" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
+                        <text id="TC-2" font-family="Roboto, Roboto Condensed, Helvetica" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
                             <tspan x="8" y="16">TC 2</tspan>
                         </text>
                     </g>
@@ -721,7 +721,7 @@
                             <use fill="black" fill-opacity="1" filter="url(#filter-69)" xlink:href="#path-68"></use>
                             <use stroke="#ED3A5E" mask="url(#mask-70)" stroke-width="4" fill="#17212A" fill-rule="evenodd" xlink:href="#path-68"></use>
                         </g>
-                        <text id="TC1" font-family="RobotoCondensed-Regular, Roboto Condensed" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
+                        <text id="TC1" font-family="Roboto, Roboto Condensed, Helvetica" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
                             <tspan x="8" y="16">TC1</tspan>
                         </text>
                     </g>
@@ -730,7 +730,7 @@
                             <use fill="black" fill-opacity="1" filter="url(#filter-72)" xlink:href="#path-71"></use>
                             <use stroke="#5C1895" mask="url(#mask-73)" stroke-width="4" fill="#17212A" fill-rule="evenodd" xlink:href="#path-71"></use>
                         </g>
-                        <text id="TC-5" font-family="RobotoCondensed-Regular, Roboto Condensed" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
+                        <text id="TC-5" font-family="Roboto, Roboto Condensed, Helvetica" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
                             <tspan x="8" y="16">TC 5</tspan>
                         </text>
                     </g>
@@ -739,7 +739,7 @@
                             <use fill="black" fill-opacity="1" filter="url(#filter-75)" xlink:href="#path-74"></use>
                             <use stroke="#85C900" mask="url(#mask-76)" stroke-width="4" fill="#17212A" fill-rule="evenodd" xlink:href="#path-74"></use>
                         </g>
-                        <text id="TC-1" font-family="RobotoCondensed-Regular, Roboto Condensed" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
+                        <text id="TC-1" font-family="Roboto, Roboto Condensed, Helvetica" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
                             <tspan x="8" y="16">TC 1</tspan>
                         </text>
                     </g>
@@ -748,7 +748,7 @@
                             <use fill="black" fill-opacity="1" filter="url(#filter-78)" xlink:href="#path-77"></use>
                             <use stroke="#00A297" mask="url(#mask-79)" stroke-width="4" fill="#17212A" fill-rule="evenodd" xlink:href="#path-77"></use>
                         </g>
-                        <text id="TC-2" font-family="RobotoCondensed-Regular, Roboto Condensed" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
+                        <text id="TC-2" font-family="Roboto, Roboto Condensed, Helvetica" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
                             <tspan x="8" y="16">TC 2</tspan>
                         </text>
                     </g>
@@ -757,7 +757,7 @@
                             <use fill="black" fill-opacity="1" filter="url(#filter-81)" xlink:href="#path-80"></use>
                             <use stroke="#85C900" mask="url(#mask-82)" stroke-width="4" fill="#17212A" fill-rule="evenodd" xlink:href="#path-80"></use>
                         </g>
-                        <text id="TC-1" font-family="RobotoCondensed-Regular, Roboto Condensed" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
+                        <text id="TC-1" font-family="Roboto, Roboto Condensed, Helvetica" font-size="14" font-style="condensed" font-weight="normal" fill="#FFFFFF">
                             <tspan x="8" y="16">TC 1</tspan>
                         </text>
                     </g>
@@ -769,7 +769,7 @@
                             <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-83"></use>
                         </g>
                         <polygon id="Triangle" fill="#FFFFFF" points="0 31 0 21 11 21"></polygon>
-                        <text id="FIAT" font-family="RobotoCondensed-Bold, Roboto Condensed" font-size="16" font-style="condensed" font-weight="bold" fill="#506270">
+                        <text id="FIAT" font-family="Roboto Bold, Helvetica, Roboto Condensed" font-size="14" font-style="condensed" font-weight="bold" fill="#506270">
                             <tspan x="8" y="18">FIAT</tspan>
                         </text>
                     </g>
@@ -779,7 +779,7 @@
                             <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-85"></use>
                         </g>
                         <polygon id="Triangle" fill="#FFFFFF" transform="translate(54.500000, 26.000000) scale(-1, 1) translate(-54.500000, -26.000000) " points="49 31 49 21 60 21"></polygon>
-                        <text id="BROSE" font-family="RobotoCondensed-Bold, Roboto Condensed" font-size="16" font-style="condensed" font-weight="bold" fill="#506270">
+                        <text id="BROSE" font-family="Roboto Bold, Helvetica, Roboto Condensed" font-size="14" font-style="condensed" font-weight="bold" fill="#506270">
                             <tspan x="8" y="18">BROSE</tspan>
                         </text>
                     </g>
@@ -789,7 +789,7 @@
                             <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-87"></use>
                         </g>
                         <polygon id="Triangle" fill="#FFFFFF" points="0 31 0 21 11 21"></polygon>
-                        <text id="GM" font-family="RobotoCondensed-Bold, Roboto Condensed" font-size="16" font-style="condensed" font-weight="bold" fill="#506270">
+                        <text id="GM" font-family="Roboto Bold, Helvetica, Roboto Condensed" font-size="14" font-style="condensed" font-weight="bold" fill="#506270">
                             <tspan x="8" y="18">GM</tspan>
                         </text>
                     </g>
@@ -799,7 +799,7 @@
                             <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-89"></use>
                         </g>
                         <polygon id="Triangle" fill="#FFFFFF" points="0 31 0 21 11 21"></polygon>
-                        <text id="ARM" font-family="RobotoCondensed-Bold, Roboto Condensed" font-size="16" font-style="condensed" font-weight="bold" fill="#506270">
+                        <text id="ARM" font-family="Roboto Bold, Helvetica, Roboto Condensed" font-size="14" font-style="condensed" font-weight="bold" fill="#506270">
                             <tspan x="8" y="18">ARM</tspan>
                         </text>
                     </g>
@@ -809,7 +809,7 @@
                             <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-91"></use>
                         </g>
                         <polygon id="Triangle" fill="#FFFFFF" points="0 31 0 21 11 21"></polygon>
-                        <text id="FIAT" font-family="RobotoCondensed-Bold, Roboto Condensed" font-size="16" font-style="condensed" font-weight="bold" fill="#506270">
+                        <text id="FIAT" font-family="Roboto Bold, Helvetica, Roboto Condensed" font-size="14" font-style="condensed" font-weight="bold" fill="#506270">
                             <tspan x="8" y="18">FIAT</tspan>
                         </text>
                     </g>
@@ -823,7 +823,7 @@
                             <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-93"></use>
                         </g>
                         <polygon id="Triangle" fill="#FFFFFF" points="0 31 0 21 11 21"></polygon>
-                        <text id="FIAT" font-family="RobotoCondensed-Bold, Roboto Condensed" font-size="16" font-style="condensed" font-weight="bold" fill="#506270">
+                        <text id="FIAT" font-family="Roboto Bold, Helvetica, Roboto Condensed" font-size="14" font-style="condensed" font-weight="bold" fill="#506270">
                             <tspan x="8" y="18">FIAT</tspan>
                         </text>
                     </g>
@@ -833,7 +833,7 @@
                             <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-95"></use>
                         </g>
                         <polygon id="Triangle" fill="#FFFFFF" points="0 31 0 21 11 21"></polygon>
-                        <text id="FIAT" font-family="RobotoCondensed-Bold, Roboto Condensed" font-size="16" font-style="condensed" font-weight="bold" fill="#506270">
+                        <text id="FIAT" font-family="Roboto Bold, Helvetica, Roboto Condensed" font-size="14" font-style="condensed" font-weight="bold" fill="#506270">
                             <tspan x="8" y="18">FIAT</tspan>
                         </text>
                     </g>
@@ -843,7 +843,7 @@
                             <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-97"></use>
                         </g>
                         <polygon id="Triangle" fill="#FFFFFF" points="0 31 0 21 11 21"></polygon>
-                        <text id="ARM" font-family="RobotoCondensed-Bold, Roboto Condensed" font-size="16" font-style="condensed" font-weight="bold" fill="#506270">
+                        <text id="ARM" font-family="Roboto Bold, Helvetica, Roboto Condensed" font-size="14" font-style="condensed" font-weight="bold" fill="#506270">
                             <tspan x="8" y="18">ARM</tspan>
                         </text>
                     </g>
@@ -853,14 +853,14 @@
                             <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-99"></use>
                         </g>
                         <polygon id="Triangle" fill="#FFFFFF" points="0 31 0 21 11 21"></polygon>
-                        <text id="ROLTRA" font-family="RobotoCondensed-Bold, Roboto Condensed" font-size="16" font-style="condensed" font-weight="bold" fill="#53B6EB">
+                        <text id="ROLTRA" font-family="Roboto Bold, Helvetica, Roboto Condensed" font-size="14" font-style="condensed" font-weight="bold" fill="#53B6EB">
                             <tspan x="8" y="18">ROLTRA</tspan>
                         </text>
                     </g>
                     <g id="Group-4-Copy-7" transform="translate(358.000000, 134.000000)">
                         <rect id="Rectangle-2" fill="#FFFFFF" x="0" y="0" width="62" height="24"></rect>
                         <polygon id="Triangle" fill="#FFFFFF" points="0 31 0 21 11 21"></polygon>
-                        <text id="BROSE" font-family="RobotoCondensed-Bold, Roboto Condensed" font-size="16" font-style="condensed" font-weight="bold" fill="#53B6EB">
+                        <text id="BROSE" font-family="Roboto Bold, Helvetica, Roboto Condensed" font-size="14" font-style="condensed" font-weight="bold" fill="#53B6EB">
                             <tspan x="8" y="18">BROSE</tspan>
                         </text>
                     </g>
@@ -870,7 +870,7 @@
                             <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-101"></use>
                         </g>
                         <polygon id="Triangle" fill="#FFFFFF" points="0 31 0 21 11 21"></polygon>
-                        <text id="VW" font-family="RobotoCondensed-Bold, Roboto Condensed" font-size="16" font-style="condensed" font-weight="bold" fill="#53B6EB">
+                        <text id="VW" font-family="Roboto Bold, Helvetica, Roboto Condensed" font-size="14" font-style="condensed" font-weight="bold" fill="#53B6EB">
                             <tspan x="8" y="18">VW</tspan>
                         </text>
                     </g>
@@ -880,7 +880,7 @@
                             <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-103"></use>
                         </g>
                         <polygon id="Triangle" fill="#FFFFFF" points="0 31 0 21 11 21"></polygon>
-                        <text id="VALEO" font-family="RobotoCondensed-Bold, Roboto Condensed" font-size="16" font-style="condensed" font-weight="bold" fill="#53B6EB">
+                        <text id="VALEO" font-family="Roboto Bold, Helvetica, Roboto Condensed" font-size="14" font-style="condensed" font-weight="bold" fill="#53B6EB">
                             <tspan x="8" y="18">VALEO</tspan>
                         </text>
                     </g>
@@ -890,7 +890,7 @@
                             <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-105"></use>
                         </g>
                         <polygon id="Triangle" fill="#FFFFFF" points="0 31 0 21 11 21"></polygon>
-                        <text id="ARM" font-family="RobotoCondensed-Bold, Roboto Condensed" font-size="16" font-style="condensed" font-weight="bold" fill="#506270">
+                        <text id="ARM" font-family="Roboto Bold, Helvetica, Roboto Condensed" font-size="14" font-style="condensed" font-weight="bold" fill="#506270">
                             <tspan x="8" y="18">ARM</tspan>
                         </text>
                     </g>
