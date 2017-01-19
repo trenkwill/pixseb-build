@@ -6796,6 +6796,9 @@ legend {
 .contradictions {
   position: relative;
   padding-top: 92px !important; }
+  .contradictions h1 {
+    margin-top: -10px;
+    margin-bottom: 10px; }
   .contradictions__tb-header {
     position: absolute;
     top: 40px;
@@ -6955,7 +6958,8 @@ legend {
       border-radius: 50%;
       box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.35); }
   .mini-card textarea {
-    height: 90px; }
+    height: 90px;
+    width: 350px; }
 
 .slider .slider-track {
   height: 2px !important;
