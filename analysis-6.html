@@ -156,10 +156,14 @@
     <div class="col-sm-8 pr0">
       <div class="card p card--separator clearfix">
         <h1 class="mt pull-left">5 Business drivers</h1>
-        <a href="#" class="btn btn-outline-grey pull-right mt js-add-driver">Add a business Drivers</a>
+        <a href="#" class="btn btn-outline-grey pull-right mt js-add-driver ml">Add a business Drivers</a>
+        <a href="#" class="btn btn-outline-grey pull-right mt js-edit-drivers">Edit</a>
       </div>
 
         <div class="df card card--separator p">
+          <div class="card__handles" style="margin-top: -6px; margin-left: -40px;">
+          <i class="ionicons ion-android-close color-white js-remove-driver hidden"></i>
+        </div>
           <div class="pl pr">
 
             <h3 class="text-bold h4 mb color-blue-dark">Operating effort</h3>
@@ -186,6 +190,9 @@
           </div>
         </div>
         <div class="df card card--separator p">
+          <div class="card__handles" style="margin-top: -6px; margin-left: -40px;">
+          <i class="ionicons ion-android-close color-white js-remove-driver hidden"></i>
+        </div>
           <div class="pl pr">
 
             <h3 class="text-bold h4 mb color-blue-dark">Noise</h3>
@@ -212,6 +219,9 @@
           </div>
         </div>
         <div class="df card card--separator p">
+          <div class="card__handles" style="margin-top: -6px; margin-left: -40px;">
+          <i class="ionicons ion-android-close color-white js-remove-driver hidden"></i>
+        </div>
           <div class="pl pr">
 
             <h3 class="text-bold h4 mb color-blue-dark">Operating effort</h3>
@@ -238,6 +248,9 @@
           </div>
         </div>
         <div class="df card card--separator p">
+          <div class="card__handles" style="margin-top: -6px; margin-left: -40px;">
+          <i class="ionicons ion-android-close color-white js-remove-driver hidden"></i>
+        </div>
           <div class="pl pr">
 
             <h3 class="text-bold h4 mb color-blue-dark">Noise</h3>
@@ -264,6 +277,9 @@
           </div>
         </div>
         <div class="df card card--separator p">
+          <div class="card__handles" style="margin-top: -6px; margin-left: -40px;">
+          <i class="ionicons ion-android-close color-white js-remove-driver hidden"></i>
+        </div>
           <div class="pl pr">
 
             <h3 class="text-bold h4 mb color-blue-dark">Operating effort</h3>
@@ -290,6 +306,9 @@
           </div>
         </div>
         <div class="df card card--separator p">
+          <div class="card__handles" style="margin-top: -6px; margin-left: -40px;">
+          <i class="ionicons ion-android-close color-white js-remove-driver hidden"></i>
+        </div>
           <div class="pl pr">
 
             <h3 class="text-bold h4 mb color-blue-dark">Noise</h3>
@@ -316,6 +335,9 @@
           </div>
         </div>
         <div class="df card card--separator p">
+          <div class="card__handles" style="margin-top: -6px; margin-left: -40px;">
+          <i class="ionicons ion-android-close color-white js-remove-driver hidden"></i>
+        </div>
           <div class="pl pr">
 
             <h3 class="text-bold h4 mb color-blue-dark">Operating effort</h3>
@@ -342,6 +364,9 @@
           </div>
         </div>
         <div class="df card card--separator p">
+          <div class="card__handles" style="margin-top: -6px; margin-left: -40px;">
+          <i class="ionicons ion-android-close color-white js-remove-driver hidden"></i>
+        </div>
           <div class="pl pr">
 
             <h3 class="text-bold h4 mb color-blue-dark">Noise</h3>
@@ -368,6 +393,9 @@
           </div>
         </div>
         <div class="df card card--separator p">
+          <div class="card__handles" style="margin-top: -6px; margin-left: -40px;">
+          <i class="ionicons ion-android-close color-white js-remove-driver hidden"></i>
+        </div>
           <div class="pl pr">
 
             <h3 class="text-bold h4 mb color-blue-dark">Operating effort</h3>
@@ -394,6 +422,9 @@
           </div>
         </div>
         <div class="df card card--separator p">
+          <div class="card__handles" style="margin-top: -6px; margin-left: -40px;">
+          <i class="ionicons ion-android-close color-white js-remove-driver hidden"></i>
+        </div>
           <div class="pl pr">
 
             <h3 class="text-bold h4 mb color-blue-dark">Noise</h3>
@@ -717,6 +748,14 @@
     e.preventDefault();
     $(this).toggleText('Done', 'Edit');
     $(".label__close").toggleClass("hidden");
+    
+  });
+
+
+  $(".js-edit-drivers").click(function(e){
+    e.preventDefault();
+    $(this).toggleText('Done', 'Edit');
+    $(".js-remove-driver").toggleClass("hidden");
     
   });
 </script>

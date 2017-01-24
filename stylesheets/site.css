@@ -6813,6 +6813,7 @@ legend {
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.2); }
 
 .patent {
+  justify-content: space-between;
   color: white;
   border-left: solid 2px #00A297;
   margin-bottom: 1px; }
@@ -7142,6 +7143,8 @@ legend {
     font-family: "Roboto Condensed", "Helvetica", "sans-serif"; }
   .index__main-image {
     text-align: center; }
+    .index__main-image img {
+      max-width: 100%; }
   .index__banner {
     display: flex;
     justify-content: center;

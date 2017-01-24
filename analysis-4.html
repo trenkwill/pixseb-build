@@ -161,10 +161,12 @@
 
       <div class="clearfix mb">
         <div class="pull-left"><h1>12 contradictions</h1></div>
-        <div class="pull-right"><a href="#" class="btn btn-outline-grey js-edit-contradictions">Edit</a></div>
+        <div class="pull-right"><a href="#" class="btn btn-outline-grey js-edit-contradictions">Edit</a><a href="#" class="btn btn-outline-grey js-new-contradiction ml">Add a contradiction</a></div>
       </div>
 
       <div class="cards">
+
+
 
       <div class="card animated mb">
 
@@ -181,7 +183,7 @@
             <div class="contradictions__count animated">A</div>
 
 
-            <h1 class="pull-left">TC A</h1>
+            <h1 class="pull-left"><span class="js-hide-edit">TC A</span><input type="text" class="form-control-2 hidden js-show-edit"></h1>
 
             <table class="table table-bordered bg-white mb0 contradictions__tb-header">
               <tr>
@@ -196,20 +198,23 @@
             <table class="table table-bordered bg-white">
               <tbody>
                 <tr>
-                  <td valign="center" style="width: 50%;">Lorem ipsum</td>
+                  <td valign="center" style="width: 50%;"><span class="js-hide-edit">Lorem ipsum</span><input type="text" class="form-control-2 hidden js-show-edit"></td>
                   <td class="text-center">
                     <i class="fa fa-2 fa-smile-o color-green"></i>
                   </td>
                   <td class="text-center"><i class="fa fa-2 fa-frown-o color-pink"></i></td>
                 </tr>
                 <tr>
-                  <td style="width: 50%;">Lorem ipsum</td>
+                  <td style="width: 50%;"><span class="js-hide-edit">Lorem ipsum</span><input type="text" class="form-control-2 hidden js-show-edit"></td>
                   <td class="text-center">
                     <i class="fa fa-2 fa-frown-o color-pink"></i>
                   </td>
                   <td class="text-center">
                     <i class="fa fa-2 fa-smile-o color-green"></i>
                   </td>
+                </tr>
+                <tr class="hidden js-show-edit">
+                  <td valign="center" colspan="3"><a href="#" class="btn btn-outline-grey js-add-row">Add</a></td>
                 </tr>
               </tbody>
             </table>
@@ -220,20 +225,26 @@
             <span class="label label-default mr- mb- pull-left">
               <i class="ionicons ion-pricetag color-blue-3 mr- font-14 pull-left"></i>
               <span class="label__text">Store enery in spring</span>
+              <i class="label__close ionicons ion-android-close hidden js-show-edit"></i>
             </span>
 
             <span class="label label-default mr- mb- pull-left">
               <i class="ionicons ion-pricetag color-blue-3 mr- font-14 pull-left"></i>
               <span class="label__text">Claw linked linked</span>
+              <i class="label__close ionicons ion-android-close hidden js-show-edit"></i>
             </span>
 
             <span class="label label-default mr- mb- pull-left">
               <i class="ionicons ion-pricetag color-blue-3 mr- font-14 pull-left"></i>
               <span class="label__text">Rolling contact</span>
+              <i class="label__close ionicons ion-android-close hidden js-show-edit"></i>
             </span>
           </div>
 
           <p class="mt"><strong>Lorem ipsum dolor</strong> sit amet, <strong>consectetur adipiscing elit</strong>. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. <strong>Proin sodales pulvinar tempor</strong>.</p>
+
+          <textarea  class="form-control-2 hidden js-show-edit" rows="100" style="height: 100px"></textarea>
+
         </div>
       </div>
 
@@ -252,7 +263,7 @@
             <div class="contradictions__count animated">B</div>
 
 
-            <h1 class="pull-left">TC B</h1>
+            <h1 class="pull-left"><span class="js-hide-edit">TC B</span><input type="text" class="form-control-2 hidden js-show-edit"></h1>
 
             <table class="table table-bordered bg-white mb0 contradictions__tb-header">
               <tr>
@@ -267,20 +278,23 @@
             <table class="table table-bordered bg-white">
               <tbody>
                 <tr>
-                  <td valign="center" style="width: 50%;">Lorem ipsum</td>
+                  <td valign="center" style="width: 50%;"><span class="js-hide-edit">Lorem ipsum</span><input type="text" class="form-control-2 hidden js-show-edit"></td>
                   <td class="text-center">
                     <i class="fa fa-2 fa-smile-o color-green"></i>
                   </td>
                   <td class="text-center"><i class="fa fa-2 fa-frown-o color-pink"></i></td>
                 </tr>
                 <tr>
-                  <td style="width: 50%;">Lorem ipsum</td>
+                  <td style="width: 50%;"><span class="js-hide-edit">Lorem ipsum</span><input type="text" class="form-control-2 hidden js-show-edit"></td>
                   <td class="text-center">
                     <i class="fa fa-2 fa-frown-o color-pink"></i>
                   </td>
                   <td class="text-center">
                     <i class="fa fa-2 fa-smile-o color-green"></i>
                   </td>
+                </tr>
+                <tr class="hidden js-show-edit">
+                  <td valign="center" colspan="3"><a href="#" class="btn btn-outline-grey js-add-row">Add</a></td>
                 </tr>
               </tbody>
             </table>
@@ -291,20 +305,26 @@
             <span class="label label-default mr- mb- pull-left">
               <i class="ionicons ion-pricetag color-blue-3 mr- font-14 pull-left"></i>
               <span class="label__text">Store enery in spring</span>
+              <i class="label__close ionicons ion-android-close hidden js-show-edit"></i>
             </span>
 
             <span class="label label-default mr- mb- pull-left">
               <i class="ionicons ion-pricetag color-blue-3 mr- font-14 pull-left"></i>
               <span class="label__text">Claw linked linked</span>
+              <i class="label__close ionicons ion-android-close hidden js-show-edit"></i>
             </span>
 
             <span class="label label-default mr- mb- pull-left">
               <i class="ionicons ion-pricetag color-blue-3 mr- font-14 pull-left"></i>
               <span class="label__text">Rolling contact</span>
+              <i class="label__close ionicons ion-android-close hidden js-show-edit"></i>
             </span>
           </div>
 
           <p class="mt"><strong>Lorem ipsum dolor</strong> sit amet, <strong>consectetur adipiscing elit</strong>. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. <strong>Proin sodales pulvinar tempor</strong>.</p>
+
+          <textarea  class="form-control-2 hidden js-show-edit" rows="100" style="height: 100px"></textarea>
+
         </div>
       </div>
 
@@ -323,7 +343,7 @@
             <div class="contradictions__count animated">C</div>
 
 
-            <h1 class="pull-left">TC C</h1>
+            <h1 class="pull-left"><span class="js-hide-edit">TC C</span><input type="text" class="form-control-2 hidden js-show-edit"></h1>
 
             <table class="table table-bordered bg-white mb0 contradictions__tb-header">
               <tr>
@@ -338,20 +358,23 @@
             <table class="table table-bordered bg-white">
               <tbody>
                 <tr>
-                  <td valign="center" style="width: 50%;">Lorem ipsum</td>
+                  <td valign="center" style="width: 50%;"><span class="js-hide-edit">Lorem ipsum</span><input type="text" class="form-control-2 hidden js-show-edit"></td>
                   <td class="text-center">
                     <i class="fa fa-2 fa-smile-o color-green"></i>
                   </td>
                   <td class="text-center"><i class="fa fa-2 fa-frown-o color-pink"></i></td>
                 </tr>
                 <tr>
-                  <td style="width: 50%;">Lorem ipsum</td>
+                  <td style="width: 50%;"><span class="js-hide-edit">Lorem ipsum</span><input type="text" class="form-control-2 hidden js-show-edit"></td>
                   <td class="text-center">
                     <i class="fa fa-2 fa-frown-o color-pink"></i>
                   </td>
                   <td class="text-center">
                     <i class="fa fa-2 fa-smile-o color-green"></i>
                   </td>
+                </tr>
+                <tr class="hidden js-show-edit">
+                  <td valign="center" colspan="3"><a href="#" class="btn btn-outline-grey js-add-row">Add</a></td>
                 </tr>
               </tbody>
             </table>
@@ -362,20 +385,26 @@
             <span class="label label-default mr- mb- pull-left">
               <i class="ionicons ion-pricetag color-blue-3 mr- font-14 pull-left"></i>
               <span class="label__text">Store enery in spring</span>
+              <i class="label__close ionicons ion-android-close hidden js-show-edit"></i>
             </span>
 
             <span class="label label-default mr- mb- pull-left">
               <i class="ionicons ion-pricetag color-blue-3 mr- font-14 pull-left"></i>
               <span class="label__text">Claw linked linked</span>
+              <i class="label__close ionicons ion-android-close hidden js-show-edit"></i>
             </span>
 
             <span class="label label-default mr- mb- pull-left">
               <i class="ionicons ion-pricetag color-blue-3 mr- font-14 pull-left"></i>
               <span class="label__text">Rolling contact</span>
+              <i class="label__close ionicons ion-android-close hidden js-show-edit"></i>
             </span>
           </div>
 
           <p class="mt"><strong>Lorem ipsum dolor</strong> sit amet, <strong>consectetur adipiscing elit</strong>. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. <strong>Proin sodales pulvinar tempor</strong>.</p>
+
+          <textarea  class="form-control-2 hidden js-show-edit" rows="100" style="height: 100px"></textarea>
+
         </div>
       </div>
 
@@ -394,7 +423,7 @@
             <div class="contradictions__count animated">D</div>
 
 
-            <h1 class="pull-left">TC D</h1>
+            <h1 class="pull-left"><span class="js-hide-edit">TC D</span><input type="text" class="form-control-2 hidden js-show-edit"></h1>
 
             <table class="table table-bordered bg-white mb0 contradictions__tb-header">
               <tr>
@@ -409,20 +438,23 @@
             <table class="table table-bordered bg-white">
               <tbody>
                 <tr>
-                  <td valign="center" style="width: 50%;">Lorem ipsum</td>
+                  <td valign="center" style="width: 50%;"><span class="js-hide-edit">Lorem ipsum</span><input type="text" class="form-control-2 hidden js-show-edit"></td>
                   <td class="text-center">
                     <i class="fa fa-2 fa-smile-o color-green"></i>
                   </td>
                   <td class="text-center"><i class="fa fa-2 fa-frown-o color-pink"></i></td>
                 </tr>
                 <tr>
-                  <td style="width: 50%;">Lorem ipsum</td>
+                  <td style="width: 50%;"><span class="js-hide-edit">Lorem ipsum</span><input type="text" class="form-control-2 hidden js-show-edit"></td>
                   <td class="text-center">
                     <i class="fa fa-2 fa-frown-o color-pink"></i>
                   </td>
                   <td class="text-center">
                     <i class="fa fa-2 fa-smile-o color-green"></i>
                   </td>
+                </tr>
+                <tr class="hidden js-show-edit">
+                  <td valign="center" colspan="3"><a href="#" class="btn btn-outline-grey js-add-row">Add</a></td>
                 </tr>
               </tbody>
             </table>
@@ -433,20 +465,26 @@
             <span class="label label-default mr- mb- pull-left">
               <i class="ionicons ion-pricetag color-blue-3 mr- font-14 pull-left"></i>
               <span class="label__text">Store enery in spring</span>
+              <i class="label__close ionicons ion-android-close hidden js-show-edit"></i>
             </span>
 
             <span class="label label-default mr- mb- pull-left">
               <i class="ionicons ion-pricetag color-blue-3 mr- font-14 pull-left"></i>
               <span class="label__text">Claw linked linked</span>
+              <i class="label__close ionicons ion-android-close hidden js-show-edit"></i>
             </span>
 
             <span class="label label-default mr- mb- pull-left">
               <i class="ionicons ion-pricetag color-blue-3 mr- font-14 pull-left"></i>
               <span class="label__text">Rolling contact</span>
+              <i class="label__close ionicons ion-android-close hidden js-show-edit"></i>
             </span>
           </div>
 
           <p class="mt"><strong>Lorem ipsum dolor</strong> sit amet, <strong>consectetur adipiscing elit</strong>. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. <strong>Proin sodales pulvinar tempor</strong>.</p>
+
+          <textarea  class="form-control-2 hidden js-show-edit" rows="100" style="height: 100px"></textarea>
+
         </div>
       </div>
 
@@ -465,7 +503,7 @@
             <div class="contradictions__count animated">E</div>
 
 
-            <h1 class="pull-left">TC E</h1>
+            <h1 class="pull-left"><span class="js-hide-edit">TC E</span><input type="text" class="form-control-2 hidden js-show-edit"></h1>
 
             <table class="table table-bordered bg-white mb0 contradictions__tb-header">
               <tr>
@@ -480,20 +518,23 @@
             <table class="table table-bordered bg-white">
               <tbody>
                 <tr>
-                  <td valign="center" style="width: 50%;">Lorem ipsum</td>
+                  <td valign="center" style="width: 50%;"><span class="js-hide-edit">Lorem ipsum</span><input type="text" class="form-control-2 hidden js-show-edit"></td>
                   <td class="text-center">
                     <i class="fa fa-2 fa-smile-o color-green"></i>
                   </td>
                   <td class="text-center"><i class="fa fa-2 fa-frown-o color-pink"></i></td>
                 </tr>
                 <tr>
-                  <td style="width: 50%;">Lorem ipsum</td>
+                  <td style="width: 50%;"><span class="js-hide-edit">Lorem ipsum</span><input type="text" class="form-control-2 hidden js-show-edit"></td>
                   <td class="text-center">
                     <i class="fa fa-2 fa-frown-o color-pink"></i>
                   </td>
                   <td class="text-center">
                     <i class="fa fa-2 fa-smile-o color-green"></i>
                   </td>
+                </tr>
+                <tr class="hidden js-show-edit">
+                  <td valign="center" colspan="3"><a href="#" class="btn btn-outline-grey js-add-row">Add</a></td>
                 </tr>
               </tbody>
             </table>
@@ -504,20 +545,26 @@
             <span class="label label-default mr- mb- pull-left">
               <i class="ionicons ion-pricetag color-blue-3 mr- font-14 pull-left"></i>
               <span class="label__text">Store enery in spring</span>
+              <i class="label__close ionicons ion-android-close hidden js-show-edit"></i>
             </span>
 
             <span class="label label-default mr- mb- pull-left">
               <i class="ionicons ion-pricetag color-blue-3 mr- font-14 pull-left"></i>
               <span class="label__text">Claw linked linked</span>
+              <i class="label__close ionicons ion-android-close hidden js-show-edit"></i>
             </span>
 
             <span class="label label-default mr- mb- pull-left">
               <i class="ionicons ion-pricetag color-blue-3 mr- font-14 pull-left"></i>
               <span class="label__text">Rolling contact</span>
+              <i class="label__close ionicons ion-android-close hidden js-show-edit"></i>
             </span>
           </div>
 
           <p class="mt"><strong>Lorem ipsum dolor</strong> sit amet, <strong>consectetur adipiscing elit</strong>. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. <strong>Proin sodales pulvinar tempor</strong>.</p>
+
+          <textarea  class="form-control-2 hidden js-show-edit" rows="100" style="height: 100px"></textarea>
+
         </div>
       </div>
 
@@ -536,7 +583,7 @@
             <div class="contradictions__count animated">F</div>
 
 
-            <h1 class="pull-left">TC F</h1>
+            <h1 class="pull-left"><span class="js-hide-edit">TC F</span><input type="text" class="form-control-2 hidden js-show-edit"></h1>
 
             <table class="table table-bordered bg-white mb0 contradictions__tb-header">
               <tr>
@@ -551,20 +598,23 @@
             <table class="table table-bordered bg-white">
               <tbody>
                 <tr>
-                  <td valign="center" style="width: 50%;">Lorem ipsum</td>
+                  <td valign="center" style="width: 50%;"><span class="js-hide-edit">Lorem ipsum</span><input type="text" class="form-control-2 hidden js-show-edit"></td>
                   <td class="text-center">
                     <i class="fa fa-2 fa-smile-o color-green"></i>
                   </td>
                   <td class="text-center"><i class="fa fa-2 fa-frown-o color-pink"></i></td>
                 </tr>
                 <tr>
-                  <td style="width: 50%;">Lorem ipsum</td>
+                  <td style="width: 50%;"><span class="js-hide-edit">Lorem ipsum</span><input type="text" class="form-control-2 hidden js-show-edit"></td>
                   <td class="text-center">
                     <i class="fa fa-2 fa-frown-o color-pink"></i>
                   </td>
                   <td class="text-center">
                     <i class="fa fa-2 fa-smile-o color-green"></i>
                   </td>
+                </tr>
+                <tr class="hidden js-show-edit">
+                  <td valign="center" colspan="3"><a href="#" class="btn btn-outline-grey js-add-row">Add</a></td>
                 </tr>
               </tbody>
             </table>
@@ -575,20 +625,26 @@
             <span class="label label-default mr- mb- pull-left">
               <i class="ionicons ion-pricetag color-blue-3 mr- font-14 pull-left"></i>
               <span class="label__text">Store enery in spring</span>
+              <i class="label__close ionicons ion-android-close hidden js-show-edit"></i>
             </span>
 
             <span class="label label-default mr- mb- pull-left">
               <i class="ionicons ion-pricetag color-blue-3 mr- font-14 pull-left"></i>
               <span class="label__text">Claw linked linked</span>
+              <i class="label__close ionicons ion-android-close hidden js-show-edit"></i>
             </span>
 
             <span class="label label-default mr- mb- pull-left">
               <i class="ionicons ion-pricetag color-blue-3 mr- font-14 pull-left"></i>
               <span class="label__text">Rolling contact</span>
+              <i class="label__close ionicons ion-android-close hidden js-show-edit"></i>
             </span>
           </div>
 
           <p class="mt"><strong>Lorem ipsum dolor</strong> sit amet, <strong>consectetur adipiscing elit</strong>. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. <strong>Proin sodales pulvinar tempor</strong>.</p>
+
+          <textarea  class="form-control-2 hidden js-show-edit" rows="100" style="height: 100px"></textarea>
+
         </div>
       </div>
       </div>
@@ -674,7 +730,7 @@
     
   });
 
-  $(".js-move-down").click(function(){
+  $(document).on('click', '.js-move-down', function(){
 
     var card = $(this).parent().parent();
     var nextCard = card.next(".card");
@@ -690,7 +746,8 @@
 
   });
 
-  $(".js-move-up").click(function(){
+  
+  $(document).on('click', '.js-move-up', function(){
 
     var card = $(this).parent().parent();
     var prevCard = card.prev(".card");
@@ -710,10 +767,64 @@
     e.preventDefault();
     $(this).toggleText('Done', 'Edit');
     $(".js-remove-contradiction").toggleClass("hidden");
+    $(".js-hide-edit").toggleClass("hidden");
+    $(".js-show-edit").toggleClass("hidden");
   });
 
 
-    $(".js-remove-contradiction").click(function(){
+
+  $(".js-new-contradiction").click(function(e){
+    e.preventDefault();
+    var newContradiction = $(
+      "<div class='card animated mb'>"+
+
+        "<div class='card__handles'>"+
+          "<i class='ionicons ion-ios-arrow-up color-white js-move-up'></i>"+
+          "<i class='ionicons ion-ios-arrow-down color-white js-move-down'></i>"+
+          "<i class='ionicons ion-android-close color-white js-remove-contradiction'></i>"+
+        "</div>"+
+        "<div class='contradictions p+'>"+
+            "<h1 class='pull-left'><input type='text' class='form-control-2'></h1>"+
+            "<table class='table table-bordered bg-white mb0 contradictions__tb-header'>"+
+              "<tr>"+
+                "<th colspan='2'><div class='text-center'>Action parameter</div></th>"+
+              "</tr>"+
+              "<tr>"+
+                "<th width='49.9%'><div class='text-uppercase text-center color-grey-light'>Strenght</div></th>"+
+                "<th width='50%'><div class='text-uppercase text-center color-grey-light'>Weakness</div></th>"+
+              "</tr>"+
+            "</table>"+
+
+            "<table class='table table-bordered bg-white'>"+
+              "<tbody>"+
+                "<tr>"+
+                  "<td valign='center' style='width: 50%;'><input type='text' class='form-control-2'></td>"+
+                  "<td class='text-center'>"+
+                    "<i class='fa fa-2 fa-smile-o color-green'></i>"+
+                  "</td>"+
+                  "<td class='text-center'><i class='fa fa-2 fa-frown-o color-pink'></i></td>"+
+                "</tr>"+
+                "<tr>"+
+                  "<td valign='center' colspan='3'><a href='#' class='btn btn-outline-grey js-add-row'>Add</a></td>"+
+                "</tr>"+
+              "</tbody>"+
+            "</table>"+
+        "</div>"+
+        "<div class='bg-grey-light pl+ pr+ pt pb'>"+
+          "<div class='clearfix'><input type='text' class='form-control-2 mb' placeholder='tags'></div>"+
+          "<textarea  class='form-control-2' rows='100' style='height: 100px'></textarea>"+
+          "<a href='#' class='btn bg-blue color-white mt'>Add constradiction</a>"+
+        "</div>"+
+      "</div>");
+
+      $(".cards").prepend(newContradiction);
+
+    });
+
+
+
+    
+    $(document).on('click', '.js-remove-contradiction', function(){
 
       var $that = $(this);
 
@@ -723,6 +834,20 @@
         $that.parent().parent().remove();
       }, 500);
 
+  });
+
+
+  $(".js-add-row").click(function(e){
+    e.preventDefault();
+    var newRow = $(
+      "<tr>"+
+        "<td valign='center' style='width: 50%;'><input type='text' class='form-control-2'></td>"+
+          "<td class='text-center'>"+
+            "<i class='fa fa-2 fa-smile-o color-green'></i>"+
+          "</td>"+
+          "<td class='text-center'><i class='fa fa-2 fa-frown-o color-pink'></i></td>"+
+      "</tr>");
+    $(this).parent().parent().before(newRow);
   });
     
   

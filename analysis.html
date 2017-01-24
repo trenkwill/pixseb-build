@@ -408,44 +408,56 @@
          <div class="patents">
              <div class="patent">
 
-                 <i class="fa fa-file-text-o fa-2 pull-left mr"></i>
-                 <p>Positive retraction latch locking dog for a rotating control device</p>
-                 <i class="ionicons ion-close"></i>
+                 <div>
+                   <i class="fa fa-file-text-o fa-2 pull-left mr"></i>
+                   <p>Positive retraction latch locking dog for a rotating control device</p>
+                 </div>
+                 <i class="ionicons ion-close js-remove-patent"></i>
 
              </div>
              <div class="patent">
 
-                 <i class="fa fa-file-text-o fa-2 pull-left mr"></i>
-                 <p>Locking arrangement has base on which the rotary catch bolt is …</p>
-                 <i class="ionicons ion-close"></i>
+                 <div>
+                   <i class="fa fa-file-text-o fa-2 pull-left mr"></i>
+                   <p>Locking arrangement has base on which the rotary catch bolt is …</p>
+                 </div>
+                 <i class="ionicons ion-close js-remove-patent"></i>
 
              </div>
              <div class="patent">
 
-                 <i class="fa fa-file-text-o fa-2 pull-left mr"></i>
-                 <p>Electric power assisted door lock</p>
-                 <i class="ionicons ion-close"></i>
+                 <div>
+                   <i class="fa fa-file-text-o fa-2 pull-left mr"></i>
+                   <p>Electric power assisted door lock</p>
+                 </div>
+                 <i class="ionicons ion-close js-remove-patent"></i>
 
              </div>
              <div class="patent">
 
-                 <i class="fa fa-file-text-o fa-2 pull-left mr"></i>
-                 <p>Positive retraction latch locking dog for a rotating control device</p>
-                 <i class="ionicons ion-close"></i>
+                 <div>
+                   <i class="fa fa-file-text-o fa-2 pull-left mr"></i>
+                   <p>Positive retraction latch locking dog for a rotating control device</p>
+                 </div>
+                 <i class="ionicons ion-close js-remove-patent"></i>
 
              </div>
              <div class="patent">
 
-                 <i class="fa fa-file-text-o fa-2 pull-left mr"></i>
-                 <p>Locking arrangement has base on which the rotary catch bolt is …</p>
-                 <i class="ionicons ion-close"></i>
+                 <div>
+                   <i class="fa fa-file-text-o fa-2 pull-left mr"></i>
+                   <p>Locking arrangement has base on which the rotary catch bolt is …</p>
+                 </div>
+                 <i class="ionicons ion-close js-remove-patent"></i>
 
              </div>
              <div class="patent">
 
-                 <i class="fa fa-file-text-o fa-2 pull-left mr"></i>
-                 <p>Electric power assisted door lock</p>
-                 <i class="ionicons ion-close"></i>
+                 <div>
+                   <i class="fa fa-file-text-o fa-2 pull-left mr"></i>
+                   <p>Electric power assisted door lock</p>
+                 </div>
+                 <i class="ionicons ion-close js-remove-patent"></i>
 
              </div>
           </div>
@@ -573,7 +585,7 @@ $('.datepicker').datepicker({
       event.preventDefault();
       var deg = i += 20;
       var inc = j += 1;
-      var html = $("<div class='patent'><i class='fa fa-file-text-o fa-2 pull-left mr'></i><p>Positive retraction latch locking dog for a rotating control …</p><i class='ionicons ion-close'></i></div>").addClass("animated zoomInDown");
+      var html = $("<div class='patent'><i class='fa fa-file-text-o fa-2 pull-left mr'></i><p>Positive retraction latch locking dog for a rotating control …</p><i class='ionicons ion-close js-remove-patent'></i></div>").addClass("animated zoomInDown");
       $(".patents").append(html);
       $(this).fadeOut().replaceWith(" <span class='added pull-right'><span class='added__check'><i class='ionicons ion-android-done'></i></span>Added</span>");
       $(".speedometer__number-of-patents__number").html(inc);
@@ -586,6 +598,14 @@ $('.datepicker').datepicker({
   // this enables the inputs to have the labels in it,
   // and when clicked animates the label to the top
   $(".js-float-label-wrapper").FloatLabel();
+
+
+
+  $(document).on('click', '.js-remove-patent', function(){
+      var $that = $(this);
+      $that.parent().addClass("animated zoomOut").slideUp();
+  });
+
 
 </script>
 

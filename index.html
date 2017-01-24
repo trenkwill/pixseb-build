@@ -28,26 +28,38 @@
     	
 <div class="container">
 	<nav class="navbar index__navbar  mb0">
-	    <a href="./" class="navbar-brand text-uppercase mt--">Pixseb</a>
-	    <a class="navbar-brand pl0" href="#">
-	    
-	    </a>
-	    <ul class="nav navbar-nav pull-left">
+
+      <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar bg-white"></span>
+              <span class="icon-bar bg-white"></span>
+              <span class="icon-bar bg-white"></span>
+            </button>
+              <a href="./" class="navbar-brand text-uppercase mt--">Pixseb</a>
+              <a class="navbar-brand pl0" href="#">
+              
+              </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	    <ul class="nav navbar-nav navbar-left">
 	      <li class="nav-item">
-	      	<a href="#concept" class="nav-link p text-medium">Concept</a>
+	      	<a href="#concept" class="nav-link p text-medium js-scroll-down">Concept</a>
 	      </li>
 	      <li class="nav-item">
-	      	<a href="#testimonials" class="nav-link p text-medium">Testimonials</a>
+	      	<a href="#testimonials" class="nav-link p text-medium js-scroll-down">Testimonials</a>
 	      </li>
 	      <li class="nav-item">
-	      	<a href="#team" class="nav-link p text-medium">Team</a>
+	      	<a href="#team" class="nav-link p text-medium js-scroll-down">Team</a>
 	      </li>
 	
 	    </ul>
-	    <ul class="nav navbar-nav pull-right">
+	    <ul class="nav navbar-nav navbar-right">
 	
 	      <li class="nav-item">
-	     	 <a href="#" class="nav-link p text-medium">Pricing</a>
+	     	 <a href="#" class="nav-link p text-medium js-scroll-down">Pricing</a>
 	      </li>
 	
 		  
@@ -68,7 +80,7 @@
 	      <a href="#login" class="nav-item btn btn-round btn-white" data-toggle="modal">Login</a>
 	
 	    </ul>
-	    
+	   </div>
 	</nav>
 </div>
 	
@@ -99,17 +111,17 @@
 		<div class="padded text-center">
 			
 			<div class="row">
-				<div class="col-sm-4">
+				<div class="col-sm-4 mb">
 					<img src="images/analysis.png" width="80" class="mb" alt="Analysis" />
 					<h2 class="h1 mb">Analysis</h2>
 					<p>From a base of 10,000 patents *. Semantic extraction & piloted analysis.</p>
 				</div>
-				<div class="col-sm-4">
+				<div class="col-sm-4 mb">
 					<img src="images/pixseb-logo.jpeg" width="150" class="mb" alt="Pixseb logo" />
 					<h2 class="h1 mb">Visualiser</h2>
 					<p>The SUN Diagram © to visualize its competitors and drive its innovation</p>
 				</div>
-				<div class="col-sm-4">
+				<div class="col-sm-4 mb">
 					<img src="images/presentation-icon.png" width="80" class="mb" alt="Presentation icon" />
 					<h2 class="h1 mb">Collaborer</h2>
 					<p>Working with others. Export the complete report. Print The SUN Diagram © in poster. It's planned !</p>
@@ -431,7 +443,7 @@
   <script>
   	$( '.js-float-label-wrapper' ).FloatLabel();
 
-  	$(document).on('click', 'a', function(event){
+  	$(document).on('click', '.js-scroll-down', function(event){
   	    event.preventDefault();
 
   	    $('html, body').animate({
