@@ -170,7 +170,12 @@
       <div class="bg-white p+">
         <div class="clearfix mb mt">
           <h1 class="pull-left text-bold">81 Problems</h1>
-          <div class="pull-right"><a href="#" class="btn btn-default color-blue js-edit-problems">Edit</a></div>
+
+          <div class="pull-right">
+            <a href="#" class="btn btn-default color-blue js-edit-problems">Edit</a>
+            <a href="#" class="btn color-white bg-blue js-added-problem hidden">Done</a>
+          </div>
+
         </div>
         <a href="#" class="btn btn--plus mb+ js-add-problem">Add a problem</a>
 
@@ -301,7 +306,10 @@
       <div class=" p+">
           <div class="clearfix mb mt">
             <h1 class="text-bold pull-left color-white">81 partial solutions</h1>
-            <div class="pull-right"><a href="#" class="btn btn-default bg-dark-blue-2 color-white js-edit-solutions">Edit</a></div>
+            <div class="pull-right">
+              <a href="#" class="btn btn-default bg-dark-blue-2 color-white js-edit-solutions">Edit</a>
+              <a href="#" class="btn color-white bg-blue js-added-solution hidden">Done</a>
+            </div>
           </div>
 
           <a href="#" class="btn btn--plus mb+ js-add-solution">Add a solution</a>
@@ -542,7 +550,7 @@
   $(".js-add-problem").click(function(e){
     e.preventDefault();
     var newProblem = $(
-      "<div class='mini-card mini-card--pink mini-card mb- mr p+ df' id='node10'>"+
+      "<div class='mini-card mini-card--pink mini-card--new mini-card mb- mr p+ df' id='node10'>"+
 
         "<i class='mini-card__delete ionicons ion-android-close js-remove-mini-card'></i>" +
 
@@ -557,14 +565,43 @@
           "</div>"+
 
       "</div>");
-
+    $(".js-edit-problems").addClass("hidden");
+    $(".js-added-problem").removeClass("hidden");
     $(this).after(newProblem);
+  });
+
+  $(document).on('click', '.js-added-problem', function(e){
+      e.preventDefault();
+      $(".js-edit-problems").removeClass("hidden");
+      $(".js-added-problem").addClass("hidden");
+      var text = $(".mini-card--new textarea").val();
+      if (text != '') {
+        $(".mini-card--pink.mini-card--new .mini-card__content textarea").hide();
+        $(".mini-card--pink.mini-card--new .js-remove-mini-card").addClass("hidden");
+        $(".mini-card--pink.mini-card--new .mini-card__content").append(text);
+      } else {
+        $(".mini-card--pink.mini-card--new").addClass("hidden");
+      }
+  });
+
+  $(document).on('click', '.js-added-solution', function(e){
+      e.preventDefault();
+      $(".js-edit-solutions").removeClass("hidden");
+      $(".js-added-solution").addClass("hidden");
+      var text = $(".mini-card--green.mini-card--new textarea").val();
+      if (text != '') {
+        $(".mini-card--green.mini-card--new .mini-card__content textarea").hide();
+        $(".mini-card--green.mini-card--new .js-remove-mini-card").addClass("hidden");
+        $(".mini-card--green.mini-card--new .mini-card__content").append(text);
+      } else {
+        $(".mini-card--green.mini-card--new").addClass("hidden");
+      }
   });
 
   $(".js-add-solution").click(function(e){
     e.preventDefault();
     var newProblem = $(
-      "<div class='mini-card mini-card--green mini-card mb- p+ df' id='node10'>"+
+      "<div class='mini-card mini-card--green mini-card--new mini-card mb- p+ df' id='node10'>"+
 
         "<i class='mini-card__delete ionicons ion-android-close js-remove-mini-card'></i>" +
 
@@ -580,7 +617,10 @@
 
       "</div>");
 
+    $(".js-edit-solutions").addClass("hidden");
+    $(".js-added-solution").removeClass("hidden");
     $(this).after(newProblem);
+    
   });
 
 

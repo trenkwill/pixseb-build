@@ -249,7 +249,7 @@
         $zoomOut: $section.find(".js-zoom-out"),
         $zoomRange: $section.find(".js-zoom-range"),
         $reset: $section.find(".js-reset"),
-        startTransform: 'scale(1) translateY(-150px)',
+        startTransform: 'scale(1) translateY(20px)',
         increment: 0.1,
         minScale: 1,
         contain: 'automatic'
@@ -266,10 +266,10 @@
           containment: ".sun-diagram__mini-map",
           drag: function(event, ui) {
                 var pos = ui.position;
-                console.log(pos.left-150 + " " + pos.top);
+                console.log(pos.left-150 + " " + pos.top+20);
 
                 var $section = $('body');
-                $section.find('.js-panzoom').panzoom("pan", -pos.left-150, -pos.top);
+                $section.find('.js-panzoom').panzoom("pan", -pos.left-150, -pos.top+20);
             }
       });
     });
